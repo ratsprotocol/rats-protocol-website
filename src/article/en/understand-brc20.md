@@ -24,7 +24,7 @@ Thus, BRC-20 can be understood as a mutated Ordinal NFT, where the inscriptions 
 
 # BRC-20 Tokens
 
-Today, two of the most held BRC-20 tokens are ORDI and WOJAK. MAP Protocol community has also released the MAPO token in the BRC-20 standard earlier in 2023. Keep in mind that most of these tokens have been created for educational or entertainment purposes and may not hold any future value. 
+Today, two of the most held BRC-20 tokens are ORDI and WOJAK. RATS Protocol community has also released the RAON token in the BRC-20 standard earlier in 2023. Keep in mind that most of these tokens have been created for educational or entertainment purposes and may not hold any future value. 
 
 
 # What are the limitations of BRC-20?

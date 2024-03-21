@@ -6,7 +6,7 @@ lang: zh
 
 BRC-20 是由 [Domo](https://twitter.com/domodata?lang=en) 提出的一个实验性代币标准。代币可以使用 Ordinal 系统来部署、铸造和转移，该系统为比特币的最小单位 satoshis（sats）编号。
 
-MAP Protocol 发布了 [BRC-201](https://mapo.gitbook.io/docs-zh/ji-chu-zhu-ti/index-2/brc201) 跨链标准，以实现 BRC-20 代币与支持图灵完备智能合约链上的代币交换，例如支持智能合约的链，如以太坊、BNB Chain 和 MAP 中继链。
+RATS Protocol 发布了 [BRC-201](https://mapo.gitbook.io/docs-zh/ji-chu-zhu-ti/index-2/brc201) 跨链标准，以实现 BRC-20 代币与支持图灵完备智能合约链上的代币交换，例如支持智能合约的链，如以太坊、BNB Chain 和 RATS 中继链。
 
 
 # BRC-20 代币的局限性

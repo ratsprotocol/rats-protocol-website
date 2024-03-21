@@ -1,14 +1,14 @@
 ---
-title: "深入理解 MAP 跨链服务 (MOS)：全面指南"
+title: "深入理解 RATS 跨链服务 (ROS)：全面指南"
 description: 
 lang: zh
 ---
 
 # 引言
 
-在日益兴盛的去中心化应用（DApps）领域，互操作性仍是一个至关重要但具有挑战性的目标。MAP Protocol 通过其创新的 MAP 跨链服务（MOS）来应对这一需求，MOS 提供了开发跨链 DApps 所需的一系列通用模块。本文将深入探讨 MOS 的复杂性，阐释其在简化跨链 DApps 开发和确保资产管理安全方面的关键作用。
+在日益兴盛的去中心化应用（DApps）领域，互操作性仍是一个至关重要但具有挑战性的目标。RATS Protocol 通过其创新的 RATS 跨链服务（MOS）来应对这一需求，MOS 提供了开发跨链 DApps 所需的一系列通用模块。本文将深入探讨 MOS 的复杂性，阐释其在简化跨链 DApps 开发和确保资产管理安全方面的关键作用。
 
-# MAP 跨链服务 (MOS)：概览
+# RATS 跨链服务 (MOS)：概览
 
 
 ![alt_text](/images/article/images/whitepaper-6.png "image_tooltip")
@@ -22,17 +22,17 @@ MOS 的核心目标是简化跨链 DApps 创造者的开发过程。通过提供
 
 # 示范工作流程：使用 AssetVault 进行跨链转移
 
-让我们考虑一个场景，Alice 希望使用 MAP Protocol 将 100 USDC 从以太坊转移到币安智能链 (BSC)：
+让我们考虑一个场景，Alice 希望使用 RATS Protocol 将 100 USDC 从以太坊转移到币安智能链 (BSC)：
 
 启动：Alice 在以太坊的 AssetVault 合约中锁定她的 100 USDC。
 
 
 
-* 锁定事件和信使角色：发出一个 Lock 事件，信使构建一个 Merkle 证明以验证事件。然后，这个证明提交给 MAP 中继链上的 AssetVault。
-* MAP 中继链上的 AssetVault：AssetVault 验证加密证明，并指示 mUSDC 合约铸造并随后燃烧相当的 mUSDC，标志着 Alice 意图将资金转移到 BSC。
+* 锁定事件和信使角色：发出一个 Lock 事件，信使构建一个 Merkle 证明以验证事件。然后，这个证明提交给 RATS 中继链上的 AssetVault。
+* RATS 中继链上的 AssetVault：AssetVault 验证加密证明，并指示 mUSDC 合约铸造并随后燃烧相当的 mUSDC，标志着 Alice 意图将资金转移到 BSC。
 * 最终转移到 BSC：另一个信使提交一个包含必要证明的交易到 BSC 上的 AssetVault。验证后，AssetVault 将 100 USDC 转移到 Alice 在 BSC 上的地址，完成跨链转移。
 
-# MAP 跨链服务 (MOS) 的组件
+# RATS 跨链服务 (MOS) 的组件
 
 
 
@@ -41,4 +41,4 @@ MOS 的核心目标是简化跨链 DApps 创造者的开发过程。通过提供
 
 # 结论
 
-MAP 跨链服务 (MOS) 在追求真正互操作的区块链生态系统方面代表了一个重要的进步。通过为开发者提供坚实的基础设施，并确保安全、无需信任的资产转移，MOS 不仅仅是一个工具，更是跨链 DApps 领域创新的催化剂。随着区块链景观的不断发展，像 MOS 这样的服务无疑将在塑造其未来中发挥关键作用。
+RATS 跨链服务 (MOS) 在追求真正互操作的区块链生态系统方面代表了一个重要的进步。通过为开发者提供坚实的基础设施，并确保安全、无需信任的资产转移，MOS 不仅仅是一个工具，更是跨链 DApps 领域创新的催化剂。随着区块链景观的不断发展，像 MOS 这样的服务无疑将在塑造其未来中发挥关键作用。

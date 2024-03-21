@@ -7,33 +7,33 @@ import Image from 'next/image'
 import { useTranslation } from 'next-i18next';
 
 const iconArray = [
-    {
-        src: '/fonts/kakao.svg',
-        link: 'https://open.kakao.com/o/gP9WduRb/'
-    },
-    {
-        src: '/fonts/Naver.svg',
-        link: 'https://blog.naver.com/mapprotocol'
-    },
-    {
-        src: '/fonts/discord.svg',
-        link: 'https://discord.com/invite/kt4beeTVnw'
-    },
+    // {
+    //     src: '/fonts/kakao.svg',
+    //     link: 'https://open.kakao.com/o/gP9WduRb/'
+    // },
+    // {
+    //     src: '/fonts/Naver.svg',
+    //     link: 'https://blog.naver.com/mapprotocol'
+    // },
+    // {
+    //     src: '/fonts/discord.svg',
+    //     link: 'https://discord.com/invite/kt4beeTVnw'
+    // },
     {
         src: '/fonts/github.svg',
-        link: 'https://github.com/mapprotocol'
+        link: 'https://github.com/ratsprotocol'
     },
-    {
-        src: '/fonts/medium.svg',
-        link: 'https://medium.com/@mapprotocolofficial'
-    },
-    {
-        src: '/fonts/telegram.svg',
-        link: 'https://t.me/MAPprotocol/'
-    },
+    // {
+    //     src: '/fonts/medium.svg',
+    //     link: 'https://medium.com/@mapprotocolofficial'
+    // },
+    // {
+    //     src: '/fonts/telegram.svg',
+    //     link: 'https://t.me/MAPprotocol/'
+    // },
     {
         src: '/fonts/x.svg',
-        link: 'https://twitter.com/mapprotocol'
+        link: 'https://twitter.com/Rats_Chain'
     },
    
 ]

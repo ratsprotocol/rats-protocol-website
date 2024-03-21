@@ -1,5 +1,5 @@
 ---
-title: "MAP Protocol for Enterprise"
+title: "RATS Protocol for Enterprise"
 description: 
 lang: en
 ---
@@ -13,10 +13,10 @@ lang: en
 * Build new business models and value creation opportunities
 * Competitively future-proof their organization
 
-Enterprise blockchain applications can be built on the public MAP Protocol, or on private blockchains that are based on MAP Protocol omnichain technology.
+Enterprise blockchain applications can be built on the public RATS Protocol, or on private blockchains that are based on RATS Protocol omnichain technology.
 
 
-# **Possible Enterprise applications with MAP protocol**
+# **Possible Enterprise applications with RATS protocol**
 
 ## Finance
 
@@ -66,4 +66,4 @@ Voting: Organizations can conduct voting across multiple blockchains, ensuring m
 
 Regulatory Compliance: Maintaining an immutable record of transactions across blockchains can help enterprises comply with regulatory requirements.
 
-The integration of MAP Protocol's omnichain technology in these sectors can lead to more efficient, transparent, and secure operations, enhancing user experience and potentially reducing costs. However, the successful implementation of these use cases requires careful planning, understanding of regulatory environments, and robust technological infrastructure.
+The integration of RATS Protocol's omnichain technology in these sectors can lead to more efficient, transparent, and secure operations, enhancing user experience and potentially reducing costs. However, the successful implementation of these use cases requires careful planning, understanding of regulatory environments, and robust technological infrastructure.

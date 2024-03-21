@@ -1,15 +1,15 @@
 ---
-title: "Understanding MAP Omnichain Service (MOS): A Comprehensive Guide"
+title: "Understanding RATS Omnichain Service (ROS): A Comprehensive Guide"
 description: 
 lang: en
 ---
 
 # Introduction
 
-In the burgeoning landscape of decentralized applications (DApps), interoperability remains a crucial yet challenging goal. The MAP Protocol addresses this need with its innovative MAP Omnichain Service (MOS), which provides a suite of common modules necessary for cross-chain DApps. This structured article will delve into the intricacies of MOS, illustrating its pivotal role in streamlining the development of cross-chain DApps and ensuring secure asset management.
+In the burgeoning landscape of decentralized applications (DApps), interoperability remains a crucial yet challenging goal. The RATS Protocol addresses this need with its innovative RATS Omnichain Service (ROS), which provides a suite of common modules necessary for cross-chain DApps. This structured article will delve into the intricacies of MOS, illustrating its pivotal role in streamlining the development of cross-chain DApps and ensuring secure asset management.
 
 
-# MAP Omnichain Service (MOS): An Overview
+# RATS Omnichain Service (ROS): An Overview
 
 
 ![alt_text](/images/article/images/whitepaper-6.png "image_tooltip")
@@ -25,18 +25,18 @@ One of the most critical aspects of cross-chain transfers is asset management, w
 
 # Illustrative Workflow: Cross-Chain Transfer Using AssetVault
 
-Let's consider a scenario where Alice wishes to transfer 100 USDC from Ethereum to Binance Smart Chain (BSC) using the MAP Protocol:
+Let's consider a scenario where Alice wishes to transfer 100 USDC from Ethereum to Binance Smart Chain (BSC) using the RATS Protocol:
 
 Initiation: Alice locks her 100 USDC in the AssetVault contract on Ethereum.
 
 
 
-* Lock Event and Messenger Role: A Lock event is emitted, and a Messenger constructs a Merkle proof to validate the event. This proof is then submitted to the AssetVault on the MAP Relay Chain.
-* AssetVault on MAP Relay Chain: The AssetVault verifies the cryptographic proof and instructs the mUSDC contract to mint and subsequently burn the equivalent mUSDC, signaling Alice's intent to transfer funds to BSC.
+* Lock Event and Messenger Role: A Lock event is emitted, and a Messenger constructs a Merkle proof to validate the event. This proof is then submitted to the AssetVault on the RATS Relay Chain.
+* AssetVault on RATS Relay Chain: The AssetVault verifies the cryptographic proof and instructs the mUSDC contract to mint and subsequently burn the equivalent mUSDC, signaling Alice's intent to transfer funds to BSC.
 * Final Transfer to BSC: Another Messenger submits a transaction to the AssetVault on BSC, containing the necessary proofs. Upon validation, the AssetVault transfers 100 USDC to Alice's address on BSC, completing the cross-chain transfer.
 
 
-# Components of MAP Omnichain Services (MOS)
+# Components of RATS Omnichain Services (MOS)
 
 
 
@@ -46,4 +46,4 @@ Initiation: Alice locks her 100 USDC in the AssetVault contract on Ethereum.
 
 # Conclusion
 
-MAP Omnichain Service (MOS) represents a significant stride in the pursuit of a truly interoperable blockchain ecosystem. By equipping developers with a robust infrastructure and ensuring secure, trustless asset transfers, MOS is not just a tool but a catalyst for innovation in the realm of cross-chain DApps. As the blockchain landscape continues to evolve, services like MOS will undoubtedly play a pivotal role in shaping its future.
+RATS Omnichain Service (MOS) represents a significant stride in the pursuit of a truly interoperable blockchain ecosystem. By equipping developers with a robust infrastructure and ensuring secure, trustless asset transfers, MOS is not just a tool but a catalyst for innovation in the realm of cross-chain DApps. As the blockchain landscape continues to evolve, services like MOS will undoubtedly play a pivotal role in shaping its future.

@@ -8,7 +8,7 @@ lang: en
 
 BRC-20 is an experimental token standard by [Domo](https://twitter.com/domodata?lang=en). Tokens can be deployed, minted, and transferred using Ordinal, a system for numbering the smallest unit of Bitcoin, satoshis (sats).
 
-MAP Protocol released the[ BRC-201](https://mapo.gitbook.io/docs-zh/ji-chu-zhu-ti/index-2/brc201) cross-chain standards for BRC-20 tokens to exchange with tokens on Turing-complete chains, i.e., chains that support smart contracts such as Ethereum, BNB Chain, and MAP Relay Chain.
+RATS Protocol released the[ BRC-201](https://mapo.gitbook.io/docs-zh/ji-chu-zhu-ti/index-2/brc201) cross-chain standards for BRC-20 tokens to exchange with tokens on Turing-complete chains, i.e., chains that support smart contracts such as Ethereum, BNB Chain, and RATS Relay Chain.
 
 
 # The limitations of BRC-20 tokens

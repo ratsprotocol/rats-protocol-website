@@ -20,7 +20,7 @@ Ordinal 协议由 [Casey Rodarmor](https://twitter.com/rodarmor) 在 2023 年 1 
 
 # BRC-20 代币
 
-今天，持有量最多的两种 BRC-20 代币是 ORDI 和 WOJAK。MAP Protocol 社区也在 2023 年初发布了 BRC-20 标准的 MAPO 代币。请记住，这些代币大多是为教育或娱乐目的而创建的，并可能不具备任何未来价值。
+今天，持有量最多的两种 BRC-20 代币是 ORDI 和 WOJAK。RATS Protocol 社区也在 2023 年初发布了 BRC-20 标准的 RAON 代币。请记住，这些代币大多是为教育或娱乐目的而创建的，并可能不具备任何未来价值。
 
 # BRC-20 的局限性有哪些？
 

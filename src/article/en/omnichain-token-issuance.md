@@ -53,13 +53,13 @@ Cross-Chain Functionality: If the token is intended to be used across multiple b
 Future Changes: Smart contracts are often immutable. If the token needs to adapt to future changes, mechanisms for upgradability or migration need to be considered during the design phase.
 
 
-# Innovate token issuance with MAP Protocol
+# Innovate token issuance with RATS Protocol
 
 Prior to 2020, Ethereum was the go-to platform for token creation. Fast-forward to now, decentralized exchanges and finance are stealing the show. Web3 is not confined to tokens and decentralized finance but should embody users’ assets and actions, which are what truly matter.
 
-It is time to rethink the process of token issuance. With MAP Protocol, from the token’s first creation to its launch and use, the token will no longer be limited to a single chain but is able to span across all active chains. Transferring a token will no longer require using potentially unsafe bridges.
+It is time to rethink the process of token issuance. With RATS Protocol, from the token’s first creation to its launch and use, the token will no longer be limited to a single chain but is able to span across all active chains. Transferring a token will no longer require using potentially unsafe bridges.
 
-Most importantly, the whole built-in cross-chain functionality is enabled by MAP Protocol’s trustless cross-chain mechanism. In this way, dApp tokens can coexist on any chain and their users can transact freely and intuitively without worrying which chain they are using. Developers can then focus their energy on building awesome features to onboard the next billion Web3 users, instead of spending unnecessary time and resources on building or finding a cross-chain bridge.
+Most importantly, the whole built-in cross-chain functionality is enabled by RATS Protocol’s trustless cross-chain mechanism. In this way, dApp tokens can coexist on any chain and their users can transact freely and intuitively without worrying which chain they are using. Developers can then focus their energy on building awesome features to onboard the next billion Web3 users, instead of spending unnecessary time and resources on building or finding a cross-chain bridge.
 
 
 ## Summary

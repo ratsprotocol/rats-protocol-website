@@ -190,7 +190,7 @@ export const tabsArray: TabsArray = {
         },
         {
             name: 'MAPO explorer',
-            path: 'https://mapscan.io/'
+            path: 'https://ratsscan.com/'
 
         },
         {
@@ -200,7 +200,7 @@ export const tabsArray: TabsArray = {
         },
         {
             name: 'Github',
-            path: 'https://github.com/mapprotocol'
+            path: 'https://github.com/ratsprotocol'
 
         },
         // {
@@ -305,7 +305,9 @@ const Header = (
                                 <div className={styles.categoryTitle}>{t(category)}</div>
                                 <div>
                                     {tabsArray[category].map((item) => (
-                                        <div onClick={() => jumpRouter(item)} className={styles.categoryItem} key={item.name}>
+                                        <div onClick={() => {
+                                            jumpRouter(item)
+                                        }} className={styles.categoryItem} key={item.name}>
                                             <div >{t(item.name)}</div>
                                         </div>
                                     ))}
@@ -376,6 +378,7 @@ const Header = (
                     {tabs.map((item, index) =>
                         <div key={item} className={styles.tab}
                             onClick={(e) => {
+                                console.log(item)
                                 e.stopPropagation();
                                 if (currentTab === item) {
                                     setCurrentTab(null);
@@ -397,7 +400,9 @@ const Header = (
                                             tabsArray[item].map((item) =>
                                                 <div
                                                     key={item.name}
-                                                    onClick={() => jumpRouter(item)}
+                                                    onClick={() => {
+                                                        jumpRouter(item)
+                                                    }}
                                                     className={`${styles.tabPanelItem}`}>
                                                     <div className={styles.tabPanelItemText}>
                                                         {t(item.name)}

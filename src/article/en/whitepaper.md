@@ -1,16 +1,16 @@
 ---
-title: "MAP Protocol White Paper"
+title: "RATS Protocol White Paper"
 description: 
 lang: en
 ---
 
-MAP Protocol is a Bitcoin layer-2 and peer-to-peer omnichain infrastructure built upon light clients and ZK technology, focusing on cross-chain interoperability. During the cross-chain process, it does not rely on any privileged third parties, but is purely peer-to-peer and only puts trust in code. It provides an omnichain smart contract development platform for dApps and interoperability for the Bitcoin ecosystem.
+RATS Protocol is a Bitcoin layer-2 and peer-to-peer omnichain infrastructure built upon light clients and ZK technology, focusing on cross-chain interoperability. During the cross-chain process, it does not rely on any privileged third parties, but is purely peer-to-peer and only puts trust in code. It provides an omnichain smart contract development platform for dApps and interoperability for the Bitcoin ecosystem.
 
 ---
 
-_Note: This white paper was first published in 2019 and has been updated as it has developed. Like other community-driven open-source software projects, the MAP Protocol white paper has continued to evolve since its release._
+_Note: This white paper was first published in 2019 and has been updated as it has developed. Like other community-driven open-source software projects, the RATS Protocol white paper has continued to evolve since its release._
 
-_The white paper explains the basic principles and technical framework of MAP Protocol, which is necessary for a systematic study of MAP technology and understanding its vision. If you want to know the latest developments and updates of MAP Protocol, you can read other related content on the website._
+_The white paper explains the basic principles and technical framework of RATS Protocol, which is necessary for a systematic study of RATS technology and understanding its vision. If you want to know the latest developments and updates of RATS Protocol, you can read other related content on the website._
 
 
 ---
@@ -38,7 +38,7 @@ However, the Bitcoin network mechanism did not remain unchanged. Over the past d
 
 The Taproot upgrade in 2021 allows for faster verification of multi-signature transactions and opens the door for inscribing text, images, SVG, and HTML on the smallest denomination of Bitcoin (called "satoshis"). In May 2023, with the proposal and explosion of BRC-20, an experimental, alternative token standard for Bitcoin, people are paying more attention to the future of Bitcoin ecosystem interoperability.
 
-How assets and users on other public chains can cross to the Bitcoin network through peer-to-peer cross-chain interoperability is also a technical issue that the industry has been exploring. As a Bitcoin-level peer-to-peer cross-chain infrastructure, MAP Protocol is committed to achieving this goal as a Bitcoin Layer 2, enriching the interoperability of the Bitcoin ecosystem.
+How assets and users on other public chains can cross to the Bitcoin network through peer-to-peer cross-chain interoperability is also a technical issue that the industry has been exploring. As a Bitcoin-level peer-to-peer cross-chain infrastructure, RATS Protocol is committed to achieving this goal as a Bitcoin Layer 2, enriching the interoperability of the Bitcoin ecosystem.
 
 
 # A Peer-to-Peer Cross-Chain Smart Contracts and Web3 DApp Development Platform
@@ -53,7 +53,7 @@ However, the majority of those cross-chain solutions essentially rely on off-cha
 
 It is worth noting that although Plokadot and Cosmos have achieved peer-to-peer cross-chain interoperability, but their cross-chain interoperability ability is only confined to chains within their ecosystem. This is not enough to meet users' needs. The industry is in urgent need of a cross-chain smart contract development platform that covers all types of chains and is completely peer-to-peer. 
 
-MAP Protocol adopts the Simplified Payment Verification (SPV) light client technology defined by Satoshi Nakamoto, innovatively turning the light client verification mechanism into smart contracts, and realizes peer-to-peer cross-chain verification by trusting the code instead of any third parties. Whether a transaction is valid or not depends only on the occurrence of the source chain, rather than any form of off-chain third-party role or organization; and through zero-knowledge proof technology,  it further enhances cross-chain verification efficiency. At the same time, the MAP Relay Chain can include all kinds of Layer1 signature, hashing, and mining algorithms through the built-in pre-compiled contracts, achieving cross-chain interoperability with heterogeneous chains, and ushering in the era of peer-to-peer omnichain dApp development.
+RATS Protocol adopts the Simplified Payment Verification (SPV) light client technology defined by Satoshi Nakamoto, innovatively turning the light client verification mechanism into smart contracts, and realizes peer-to-peer cross-chain verification by trusting the code instead of any third parties. Whether a transaction is valid or not depends only on the occurrence of the source chain, rather than any form of off-chain third-party role or organization; and through zero-knowledge proof technology,  it further enhances cross-chain verification efficiency. At the same time, the RATS Relay Chain can include all kinds of Layer1 signature, hashing, and mining algorithms through the built-in pre-compiled contracts, achieving cross-chain interoperability with heterogeneous chains, and ushering in the era of peer-to-peer omnichain dApp development.
 
 
 # Background
@@ -66,7 +66,7 @@ MAP Protocol adopts the Simplified Payment Verification (SPV) light client techn
 2. The emergence of the programmable smart contract of Ethereum: boosted the development of public chains and decentralized applications (dApps) since 2015.
 3. The emergence of omnichain network infrastructure: making omnichain dApps possible and significantly boosts development.
 
-Before MAP Protocol, the three primary cross-chain solutions are:
+Before RATS Protocol, the three primary cross-chain solutions are:
 
 
 
@@ -75,7 +75,7 @@ Before MAP Protocol, the three primary cross-chain solutions are:
 3. Polkadot and Cosmos: Both are Bitcoin-level peer-to-peer cross-chain solutions but are limited to internal ecosystem chain cross-chain communications; they can't interoperate peer-to-peer with EVM chains and other heterogeneous chains.
 
 
-# MAP Protocol Peer-to-Peer Cross-Chain Solution
+# RATS Protocol Peer-to-Peer Cross-Chain Solution
 
 To achieve peer-to-peer cross-chain verification, two major obstacles must be resolved:
 
@@ -96,10 +96,10 @@ These are typically overseen by a group of third-party off-chain witnesses, who 
 
 1. Set up a relay chain that algorithmically harmonizes any data-heterogeneous blockchain mainnet.
 
-    MAP Protocol has three layers: peer-to-peer, consensus layer, and smart contract development layer. Different chains have different signature algorithms and hash algorithms. For example, Ethereum uses the secp256k1 signature algorithm and keccak-256 hash algorithm. NEAR uses the ed25519 signature algorithm and SHA-256 hash algorithm, while Conflux uses a POW mining mechanism. In simple terms, blockchain transactions are initiated by one party signing the transaction, and another party accepts the transaction by cracking the hash, with no third-party trust involved. To build a peer-to-peer network that covers different chains, a relay chain needs to exist that makes these different algorithms homogenous.
+    RATS Protocol has three layers: peer-to-peer, consensus layer, and smart contract development layer. Different chains have different signature algorithms and hash algorithms. For example, Ethereum uses the secp256k1 signature algorithm and keccak-256 hash algorithm. NEAR uses the ed25519 signature algorithm and SHA-256 hash algorithm, while Conflux uses a POW mining mechanism. In simple terms, blockchain transactions are initiated by one party signing the transaction, and another party accepts the transaction by cracking the hash, with no third-party trust involved. To build a peer-to-peer network that covers different chains, a relay chain needs to exist that makes these different algorithms homogenous.
 
 
-    MAP Protocol's solution is built on the MAP Relay Chain's Virtual Machine development layer, with pre-compiled contracts embedding various chain signature algorithms, hash algorithms, mining, and Merkle Tree proofs. MAP Relay Chain aims to make mainstream algorithms homogenous, and the algorithms already integrated into this pre-compiled contract are as follows.
+    RATS Protocol's solution is built on the RATS Relay Chain's Virtual Machine development layer, with pre-compiled contracts embedding various chain signature algorithms, hash algorithms, mining, and Merkle Tree proofs. RATS Relay Chain aims to make mainstream algorithms homogenous, and the algorithms already integrated into this pre-compiled contract are as follows.
 
 
         SHA3
@@ -131,7 +131,7 @@ Although this approach requires a lot of work, it allows the target chain with d
 
 
 
-2. The Light Client for Simple Payment Verification (SPV) from the origin chain is deployed to the target chain as a smart contract. For example, if a peer-to-peer cross-chain transaction is initiated from Ethereum to NEAR, then Ethereum's Light Client must first be deployed as a smart contract to the MAP Relay Chain, followed by deploying MAP Relay Chain's Light Client to NEAR as a smart contract.
+2. The Light Client for Simple Payment Verification (SPV) from the origin chain is deployed to the target chain as a smart contract. For example, if a peer-to-peer cross-chain transaction is initiated from Ethereum to NEAR, then Ethereum's Light Client must first be deployed as a smart contract to the RATS Relay Chain, followed by deploying RATS Relay Chain's Light Client to NEAR as a smart contract.
 3. Cross-chain message forwarding is managed by a group of off-chain Messengers who forward cross-chain requests from the origin chain to the target chain. The target chain's origin chain Light Client smart contract then validates the requests.
 4. Updating the Light Client is done by a group of off-chain Maintainers responsible for updating the latest block headers and Merkle Tree proofs from the origin chain to the smart contract deployed on the target chain. Messengers and Maintainers serve only as message carriers and have no authority for cross-chain validation. Their attacks on the self-verifying Light Client smart contract are ineffective.
 5. The Light Client smart contract deployed on the target chain carries out point-to-point validity verification of the cross-chain requests forwarded by the off-chain roles and broadcasts them for transaction execution.
@@ -150,7 +150,7 @@ Satoshi Nakamoto first defined Simple Payment Verification (SPV) in [the Bitcoin
 
 ## The Trustless and Self-verifying Nature of Light Clients
 
-Although oracle solutions also verify cross-chain validity through block headers, oracles are not smart contract-level code trust. Instead, they are organized by a group of off-chain third-party roles who have the power to tamper with the submitted block header information. MAP Protocol's solution deploys the light client of the origin chain in the form of a smart contract to the target chain. The cross-chain verification of whether a transaction is genuine and valid is entirely through the light client smart contract of the origin chain on the target chain. The light client smart contract follows the longest chain principle and is maintained by a group of cross-chain message role maintainers responsible for synchronizing the latest light client status of the origin chain to the corresponding smart contract on the target chain. This smart contract stores the block headers of the origin chain and Merkle tree proof data sufficient to satisfy the longest chain verification of a transaction.
+Although oracle solutions also verify cross-chain validity through block headers, oracles are not smart contract-level code trust. Instead, they are organized by a group of off-chain third-party roles who have the power to tamper with the submitted block header information. RATS Protocol's solution deploys the light client of the origin chain in the form of a smart contract to the target chain. The cross-chain verification of whether a transaction is genuine and valid is entirely through the light client smart contract of the origin chain on the target chain. The light client smart contract follows the longest chain principle and is maintained by a group of cross-chain message role maintainers responsible for synchronizing the latest light client status of the origin chain to the corresponding smart contract on the target chain. This smart contract stores the block headers of the origin chain and Merkle tree proof data sufficient to satisfy the longest chain verification of a transaction.
 
 Although maintainers are off-chain programs, once the light client smart contract is correctly and honestly initialized (linked to the corresponding light client page in the browser), maintainers have no opportunity to tamper with the subsequently appended light client status, that is, block headers and Merkle trees. This is because a blockchain is a data structure that links blocks containing transaction information in reverse order. Each block header will link the hash value of the previous block header. False block headers cannot match the hash value of the real block header already stored in the smart contract; and the smart contract is code trust, no one can modify it again. Therefore, any malicious attacks by maintainers on the light client smart contract are ineffective. On the other hand, any attempt to change any part of the Merkle tree will ultimately lead to inconsistency somewhere on the chain, making the maintainers' attack on the light client smart contract invalid.
 
@@ -183,29 +183,29 @@ Zero-knowledge proofs refer to a method of verifying the validity of a statement
 
 ### Peer-to-Peer Cross-Chain Verification Solution Combining Light Client with ZK
 
-In the MAP Protocol technical mechanism, ZK proof is responsible for verifying the BLS aggregate signature hash value of the origin chain, followed by the light client smart contract verifying the Merkle proof and re-verifying the ZK proof. By combining the MAP Relay Chain compatible with various blockchain algorithms, MAP Protocol has achieved code trust without privileged third parties as defined by Satoshi Nakamoto, and it can cover different types of blockchains, truly realizing a peer-to-peer cross-chain blockchain network.
+In the RATS Protocol technical mechanism, ZK proof is responsible for verifying the BLS aggregate signature hash value of the origin chain, followed by the light client smart contract verifying the Merkle proof and re-verifying the ZK proof. By combining the RATS Relay Chain compatible with various blockchain algorithms, RATS Protocol has achieved code trust without privileged third parties as defined by Satoshi Nakamoto, and it can cover different types of blockchains, truly realizing a peer-to-peer cross-chain blockchain network.
 
 
-# MAP Protocol Three-Layer Architecture
+# RATS Protocol Three-Layer Architecture
 
 
 
 ![alt_text](/images/article/images/whitepaper-11.png "image_tooltip")
 
 
-To ensure the omnichain infrastructure’s overall flexibility and robustness, MAP Protocol’s technical architecture is divided into three layers: the protocol layer, the MOS whole chain service layer, and the application layer.
+To ensure the omnichain infrastructure’s overall flexibility and robustness, RATS Protocol’s technical architecture is divided into three layers: the protocol layer, the MOS whole chain service layer, and the application layer.
 
-The middle layer is the MOS (MAP Omnichain Service), which provides a series of component tools to help dApps quickly deploy cross-chain smart contract applications. This includes the cross-chain transaction forwarding role Messenger, cross-chain lock-up smart contracts, and cross-chain message components, etc. The third layer is the application layer, which is the MAP Protocol whole chain smart contract ecological application.
-
-
-## MAP Protocol Protocol Layer
-
-MAP Protocol Protocol layer is the bottom layer of MAP Protocol, responsible for cross-chain traction verification and ensuring peer-to-peer cross-chain. It is the core of MAP Protocol, including MAP Relay Chain, Miantianer, and ZK-optimized light clients.
+The middle layer is the MOS (RATS Omnichain Service), which provides a series of component tools to help dApps quickly deploy cross-chain smart contract applications. This includes the cross-chain transaction forwarding role Messenger, cross-chain lock-up smart contracts, and cross-chain message components, etc. The third layer is the application layer, which is the RATS Protocol whole chain smart contract ecological application.
 
 
-#### MAP Relay Chain
+## RATS Protocol Protocol Layer
 
-The MAP Relay Chain is a blockchain based on the Proof of Stake (POS) mechanism. Compared to Proof of Work (POW) systems like Bitcoin, it is more environmentally friendly. Under the POS mechanism, users can conduct cheaper, faster transactions with irreversible results once completed. The MAP Relay Chain implements the Istanbul Byzantine Fault Tolerance (IBFT) consensus algorithm, which allows a well-defined group of validator nodes to reach agreement by broadcasting signed messages among them in a series of steps, even if up to one-third of the nodes are offline, faulty, or malicious. When a quorum of validators reaches a consensus, that decision is final. For more details about Atlas, please refer to the relevant technical documentation. A unique feature of the MAP Relay Chain is that it has precompiled contracts that incorporate the core algorithms of almost all chains.
+RATS Protocol Protocol layer is the bottom layer of RATS Protocol, responsible for cross-chain traction verification and ensuring peer-to-peer cross-chain. It is the core of RATS Protocol, including RATS Relay Chain, Miantianer, and ZK-optimized light clients.
+
+
+#### RATS Relay Chain
+
+The RATS Relay Chain is a blockchain based on the Proof of Stake (POS) mechanism. Compared to Proof of Work (POW) systems like Bitcoin, it is more environmentally friendly. Under the POS mechanism, users can conduct cheaper, faster transactions with irreversible results once completed. The RATS Relay Chain implements the Istanbul Byzantine Fault Tolerance (IBFT) consensus algorithm, which allows a well-defined group of validator nodes to reach agreement by broadcasting signed messages among them in a series of steps, even if up to one-third of the nodes are offline, faulty, or malicious. When a quorum of validators reaches a consensus, that decision is final. For more details about Atlas, please refer to the relevant technical documentation. A unique feature of the RATS Relay Chain is that it has precompiled contracts that incorporate the core algorithms of almost all chains.
 
 
 #### Maintainer
@@ -215,7 +215,7 @@ Maintainers are a group of off-chain roles responsible for updating the latest b
 
 ## ZK-Improved Light Clients
 
-Using light clients to perform cross-chain verification is peer-to-peer decentralized, but the verification cost is higher compared to other cross-chain solutions that rely on third parties, and the efficiency is also relatively low. Therefore, MAP Protocol innovatively introduces ZK technology, optimizing the peer-to-peer cross-chain verification with light clients using ZK to optimize the verification rate.
+Using light clients to perform cross-chain verification is peer-to-peer decentralized, but the verification cost is higher compared to other cross-chain solutions that rely on third parties, and the efficiency is also relatively low. Therefore, RATS Protocol innovatively introduces ZK technology, optimizing the peer-to-peer cross-chain verification with light clients using ZK to optimize the verification rate.
 
 
 ### Light Client Cross-Chain Peer-to-Peer Verification Mechanism
@@ -235,7 +235,7 @@ Since each term of the validator group of the PoS mechanism chain is produced by
 In the case where the origin chain's light client is deployed on the target chain's smart contract, maintainers are responsible for synchronizing the latest block header information of the origin chain to the light client contract on the target chain; the light client contract deployed on the target chain stores the latest Nth block header of the origin chain; if maintainers try to write a false block header into the origin chain, the false information will not have a matching previous block header hash value, so it will not be accepted by the light client smart contract stored on the target chain.
 
 
-## ZK-Improved Light Clients for MAP Relay Chain
+## ZK-Improved Light Clients for RATS Relay Chain
 
 
 
@@ -243,25 +243,25 @@ In the case where the origin chain's light client is deployed on the target chai
 ![alt_text](/images/article/images/whitepaper-4.png "image_tooltip")
 
 
-The cross-chain verification of MAP Protocol is mainly performed by the light client smart contract of the origin chain deployed on the target chain to perform the following two verifications:
+The cross-chain verification of RATS Protocol is mainly performed by the light client smart contract of the origin chain deployed on the target chain to perform the following two verifications:
 
 
 
 1. Correctness verification of the block header: Verify the legality of the block header requested by the maintainer to be written in. Depending on the different chain consensus mechanisms, this verification scheme will vary. For chains using PoS and BFT mechanisms, it is usually to verify that the legal signature represented in the block header has more than 2/3 of the voting rights.
 2. Verification of Merkle proof: Verify that a specific event is emitted at a specific block height, the correct Merkle root value is required in the block header, and the first step ensures correctness. In a group of blockchains similar to Ethereum's structure, this Merkle proof is usually proof of the existence of the Merkle Patricia Trie, that is, the receipt tree MPT does indeed contain a specific event.
 
-Improving the implementation of the MAP Relay Chain light client using zkSNARK technology aims to solve two problems:
+Improving the implementation of the RATS Relay Chain light client using zkSNARK technology aims to solve two problems:
 
 
 
-1. Reduce the amount of MAP Relay Chain metadata that needs to be stored in the light client contract, lowering the gas cost for updating the state of the light client itself.
+1. Reduce the amount of RATS Relay Chain metadata that needs to be stored in the light client contract, lowering the gas cost for updating the state of the light client itself.
 2. Move the signature validity and signature weight check part of the block header legality verification process into the zero-knowledge proof circuit and use the Groth16 scheme for verification to reduce gas costs.
 
-In the MAP Relay Chain light client smart contract, it is necessary to store the public keys and staking weight information of all validators in the current epoch. When verifying the validity of a new block header, based on the information in the block header and the current validator information stored in the light client contract, the light client contract can calculate the aggregated public key required for the aggregate signature verification of the block header. 
+In the RATS Relay Chain light client smart contract, it is necessary to store the public keys and staking weight information of all validators in the current epoch. When verifying the validity of a new block header, based on the information in the block header and the current validator information stored in the light client contract, the light client contract can calculate the aggregated public key required for the aggregate signature verification of the block header. 
 
-If the aggregate signature verification passes and the sum of the voting weights represented by the aggregate public key exceeds 2/3, the block header will pass verification. In the MAP Relay Chain light client built on zkSNARK, only the commit value of the current validator set metadata needs to be stored, i.e., SHA256((pk_0, wt_0), (pk_1, wt_1), ..., (pk_n, wt_n)). This means the light client contract is simplified from needing to store n public keys and weight information to only needing to store a 256-bit commit value.
+If the aggregate signature verification passes and the sum of the voting weights represented by the aggregate public key exceeds 2/3, the block header will pass verification. In the RATS Relay Chain light client built on zkSNARK, only the commit value of the current validator set metadata needs to be stored, i.e., SHA256((pk_0, wt_0), (pk_1, wt_1), ..., (pk_n, wt_n)). This means the light client contract is simplified from needing to store n public keys and weight information to only needing to store a 256-bit commit value.
 
-Therefore, the block header verification logic of the MAP Relay Chain light client built on zkSNARK can be simplified as whether the input block header is the correct block within the validator set information represented by the current commit value. The success or failure of this judgment depends on the zkSNARK proof input along with the block header.
+Therefore, the block header verification logic of the RATS Relay Chain light client built on zkSNARK can be simplified as whether the input block header is the correct block within the validator set information represented by the current commit value. The success or failure of this judgment depends on the zkSNARK proof input along with the block header.
 
 
 ### Cross-chain mechanism after introducing zkSNARK
@@ -315,7 +315,7 @@ The process of the light client verifying the legitimacy of the synchronization 
 
 ### Conclusion
 
-According to the foregoing discussion, after the MAP Relay Chain light client is upgraded based on zkSNARK, the corresponding adjustments that the maintainer/messenger needs to make are as follows:
+According to the foregoing discussion, after the RATS Relay Chain light client is upgraded based on zkSNARK, the corresponding adjustments that the maintainer/messenger needs to make are as follows:
 
 
 
@@ -333,7 +333,7 @@ Users who interact cross-chain through the front end usually feel the changes ha
 After the third step's transaction is packaged, the front end can prompt: "The zk-proof and cross-chain request have been processed by the target chain.
 
 
-## Further Ensure MAP Protocol Network Security through the Bitcoin Network
+## Further Ensure RATS Protocol Network Security through the Bitcoin Network
 
 
 Long-range attacks are a type of assault specifically aimed at Proof of Stake (PoS) systems. Attackers attempt to create a forked chain starting from the early history of the blockchain. If successful, this could redefine the authoritative historical record of the chain, leading to double-spending issues or undermining network trust. In the relay chain architectures, this issue is particularly critical because they often coordinate interactions between multiple independent blockchains within a network. If a relay chain suffers a long-range attack, it could impact all chains that rely on it as a basis for trust and communication.
@@ -342,14 +342,14 @@ Bitcoin, with its immense computational power, can be considered a natural sourc
 
 Checkpoints can be implemented using the` OP_RETURN` opcode of Bitcoin, which allows the publication of arbitrary 80-byte data in unspendable Bitcoin transactions. Each checkpoint must contain at least the hash of the PoS block to be checked (32 bytes) and a signature finalizing that block (32 bytes each). Here, the hash is used to identify the PoS block being checkpointed, and the signature is required to prevent adversaries from sending arbitrary hashes and pretending to checkpoint PoS blocks on Bitcoin.
 
-A PoS chain can enhance its security and address the long-range attack problem by utilizing the Bitcoin timestamp service's features. The MAPO platform regularly (every epoch) submits the hash and signature of the last block of each epoch as a checkpoint to the Bitcoin network. These checkpoints consist of the hash of the block and a single aggregated BLS signature, corresponding to the signature of the 2/3 set of validators who signed the block for finality, as well as the epoch number and bitmap number. 
+A PoS chain can enhance its security and address the long-range attack problem by utilizing the Bitcoin timestamp service's features. The RAON platform regularly (every epoch) submits the hash and signature of the last block of each epoch as a checkpoint to the Bitcoin network. These checkpoints consist of the hash of the block and a single aggregated BLS signature, corresponding to the signature of the 2/3 set of validators who signed the block for finality, as well as the epoch number and bitmap number. 
 
-As a result, MAPO clients can determine the final canonical chain of the MAP Protocol‘s PoS chain by retrieving checkpoints from the Bitcoin network, thus protecting against long-range attacks by malicious validators on the MAP Protocol network.
-
-
+As a result, RAON clients can determine the final canonical chain of the RATS Protocol‘s PoS chain by retrieving checkpoints from the Bitcoin network, thus protecting against long-range attacks by malicious validators on the RATS Protocol network.
 
 
-## MAP Omnichain Service (MOS) Layer
+
+
+## RATS Omnichain Service (ROS) Layer
 
 The MOS layer includes Messenger, Vault & Data, and other cross-chain message components.
 
@@ -364,9 +364,9 @@ The MOS layer includes Messenger, Vault & Data, and other cross-chain message co
 
 Messenger is an independent inter-chain program. It listens to relevant events as preset in the program and builds a proof on the ledger of the source chain; then transmits the message of the event and proof to Vault or Data on the target chain.
 
-Messenger prepays the gas fee in MAP Protocol Network and the target chain for users; but since the gas fee for target chains cannot be estimated, rewards for Messenger will be provided by dApps. The flexibility of the application provides Messenger with numerous possibilities. Applications can collect customizable transaction fees from omnichain users and consequently reward Messenger. As a main component of MOS, Messenger SDK is fully open to dApp developers.
+Messenger prepays the gas fee in RATS Protocol Network and the target chain for users; but since the gas fee for target chains cannot be estimated, rewards for Messenger will be provided by dApps. The flexibility of the application provides Messenger with numerous possibilities. Applications can collect customizable transaction fees from omnichain users and consequently reward Messenger. As a main component of MOS, Messenger SDK is fully open to dApp developers.
 
-Messenger is a high-concurrency inter-chain program. Theoretically, as long as one honest Messenger is working in between chains, all cross-chain transaction messages of the dApp can be transferred. Malicious attacks from Messengers will not result in asset loss, but rather, they will cause the cross-chain verification of MAP Protocol at the protocol layer to fail
+Messenger is a high-concurrency inter-chain program. Theoretically, as long as one honest Messenger is working in between chains, all cross-chain transaction messages of the dApp can be transferred. Malicious attacks from Messengers will not result in asset loss, but rather, they will cause the cross-chain verification of RATS Protocol at the protocol layer to fail
 
 
 ### Vault & Data
@@ -374,7 +374,7 @@ Messenger is a high-concurrency inter-chain program. Theoretically, as long as o
 On the source chain, Vault & Data contracts are responsible for receiving assets or data and triggering events for Messenger to listen to. On the relay chain or target chain, Vault and Data contracts are responsible for receiving cross-chain messages sent by Messenger and forwarding the request to the light client of the source chain deployed on the relay chain/target chain. Once the verification is complete, Vault and Data will execute the corresponding instructions.
 
 
-## MAP Protocol Application Layer
+## RATS Protocol Application Layer
 
 When building an omnichain dApp, it is necessary to know first how assets cross-chain and cross-chian messaging is done. Below are the details.
 
@@ -417,9 +417,9 @@ Cross-chain messaging is the interoperability of smart contracts. The steps are 
 The composability of smart contracts on different chains can further enhance DeFi efficiency, allowing a user or a smart contract to interact with DeFi products on other chains and return their original assets on their original chain in a peer-to-peer manner, regardless of which token they use or which chain they are on.
 
 
-# MAP Protocol Tokenomics
+# RATS Protocol Tokenomics
 
-As an omnichain infrastructure, MAP Protocol is dedicated to building an open economy powering everyone equally to participate and its ecosystem operations, growth initiatives, and strategic investments. Many public blockchain projects have monetary systems that solely incentivize their node operators. MAP Protocol’s tokenomics is designed to compensate more diverse forms of contributions from a wider range of participants, and has built-in incentive structure to procure sustained resources to fuel future growth initiatives and strategically sourced investment projects in addition to maintaining its blockchain nodes.
+As an omnichain infrastructure, RATS Protocol is dedicated to building an open economy powering everyone equally to participate and its ecosystem operations, growth initiatives, and strategic investments. Many public blockchain projects have monetary systems that solely incentivize their node operators. RATS Protocol’s tokenomics is designed to compensate more diverse forms of contributions from a wider range of participants, and has built-in incentive structure to procure sustained resources to fuel future growth initiatives and strategically sourced investment projects in addition to maintaining its blockchain nodes.
 
 
 ## Allocation and Distribution
@@ -430,24 +430,24 @@ As an omnichain infrastructure, MAP Protocol is dedicated to building an open ec
 ![alt_text](/images/article/images/whitepaper-9.png "image_tooltip")
 
 
-The total supply of MAPO is 10 billion. MAP Protocol’s token allocation is in line with incentivizing MAP Protocol's network’s block generation, network maintenance, ecosystem development, and community growth. Detailed distribution and predetermined ratio is as follows:
+The total supply of RAON is 100 billion. RATS Protocol’s token allocation is in line with incentivizing RATS Protocol's network’s block generation, network maintenance, ecosystem development, and community growth. Detailed distribution and predetermined ratio is as follows:
 
 
 
-* 15% are for developers of MAP Protocol, with a vesting period of 2019 to 2025. 
-* 21% are for Ecosystem DAO, not locked, and fully decided by the MAPO Community on how the token should be used. For MAPDAO governance, all major decisions that may impact community members need to be fully discussed on the MAP forum and subsequently be voted on-chain.
-* 12% are for MAP Foundation for building the initial state of the MAP Protocol ecosystem and the web3 omnichain ecosystem before it becomes fully decentralized.
+* 15% are for developers of RATS Protocol, with a vesting period of 2019 to 2025. 
+* 21% are for Ecosystem DAO, not locked, and fully decided by the RAON Community on how the token should be used. For RATSDAO governance, all major decisions that may impact community members need to be fully discussed on the RATS forum and subsequently be voted on-chain.
+* 12% are for RATS Foundation for building the initial state of the RATS Protocol ecosystem and the web3 omnichain ecosystem before it becomes fully decentralized.
 * 22% are for its investors and early supporters.
-* 30% are mining rewards for validators on MAP Protocol Network, and Maintainers.
+* 30% are mining rewards for validators on RATS Protocol Network, and Maintainers.
 
 
 ## Fee Model
 
-MAP Protocol will only charge the gas fee generated on MAP Protocol Network for each cross-chain transaction. Maintainer can get extra rewards from MAP Protocol for updating and maintaining Light-Clients.
+RATS Protocol will only charge the gas fee generated on RATS Protocol Network for each cross-chain transaction. Maintainer can get extra rewards from RATS Protocol for updating and maintaining Light-Clients.
 
-As an inter-chain program, Messenger is an essential part of MOS. Messenger needs to prepay the gas fees of MAP Protocol Network and the target chain for omnichain users. Fees on the target chain cannot be estimated, so MAP Protocol provides the Messenger SDK to developers. Application Layer provides the flexibility for dApp developers to determine the cross-chain transaction fee standard, rewards to Messengers, and their entry requirements.
+As an inter-chain program, Messenger is an essential part of MOS. Messenger needs to prepay the gas fees of RATS Protocol Network and the target chain for omnichain users. Fees on the target chain cannot be estimated, so RATS Protocol provides the Messenger SDK to developers. Application Layer provides the flexibility for dApp developers to determine the cross-chain transaction fee standard, rewards to Messengers, and their entry requirements.
 
-Vault & Data deployed on each chain are also essential parts of MAP Omnichain Service (MOS) Layer, responsible for managing assets (fungible tokens and NFTs) and data on each chain. For developers of Vault & Data, MOS will not charge any fees. Applications can determine the fee structure for sharing the liquidity in vaults and data pools at their discretion.
+Vault & Data deployed on each chain are also essential parts of RATS Omnichain Service (ROS) Layer, responsible for managing assets (fungible tokens and NFTs) and data on each chain. For developers of Vault & Data, MOS will not charge any fees. Applications can determine the fee structure for sharing the liquidity in vaults and data pools at their discretion.
 
 
 ## Anticipated unlocking Schedule in the next 15 years
@@ -464,38 +464,38 @@ Both unlocked (i.e. tokens that are available for distribution) and locked (i.e.
 
 # How Community Members Can Participate and Earn
 
-Each layer of MAP Protocol offers opportunities for community members to participate.
+Each layer of RATS Protocol offers opportunities for community members to participate.
 
 
 ## On Protocol Layer
 
 
 
-* Run a node and become a validator: Validators are the foundation of the MAP Protocol Network. Community members can stake a certain amount of $MAPO and run a node with required computational power. Community members can also delegate their $MAPO to validation node operators.
-* Become a Maintainer: The value of Maintainers lies in updating the status of light clients deployed on the target chain, ensuring the smooth operation of the verification network. When a Maintainer updates a light client, a transaction must be written to the chain, incurring gas fees. Therefore, the MAP Protocol's economic model includes a separate component designed to incentivize and compensate Maintainers. Running as a Maintainer requires computational capacity, sufficient cash flow to prepay gas fees on the target chain, and staking $MAPO.
+* Run a node and become a validator: Validators are the foundation of the RATS Protocol Network. Community members can stake a certain amount of $RAON and run a node with required computational power. Community members can also delegate their $RAON to validation node operators.
+* Become a Maintainer: The value of Maintainers lies in updating the status of light clients deployed on the target chain, ensuring the smooth operation of the verification network. When a Maintainer updates a light client, a transaction must be written to the chain, incurring gas fees. Therefore, the RATS Protocol's economic model includes a separate component designed to incentivize and compensate Maintainers. Running as a Maintainer requires computational capacity, sufficient cash flow to prepay gas fees on the target chain, and staking $RAON.
 
 
-## On MAP Omnichain Service (MOS) Layer
+## On RATS Omnichain Service (ROS) Layer
 
 
 
-* Become a Liquidity Provider: Community members can provide liquidity to Vaults on each chain through dApps deployed within the MAP Protocol ecosystem. Each dApp designs its own incentive model.
-* Run Messenger: Running Messenger requires providing sufficient gas fees for the MAP Protocol Network ($MAPO) and the target chain (native tokens). Each dApp establishes its incentivization scheme.
+* Become a Liquidity Provider: Community members can provide liquidity to Vaults on each chain through dApps deployed within the RATS Protocol ecosystem. Each dApp designs its own incentive model.
+* Run Messenger: Running Messenger requires providing sufficient gas fees for the RATS Protocol Network ($RAON) and the target chain (native tokens). Each dApp establishes its incentivization scheme.
 
 
 ## On Application Layer
 
 
 
-* Be a dApp Developer: With the complete set of SDKs provided by MAP Protocol, dApp developers can build various cross-chain applications.
+* Be a dApp Developer: With the complete set of SDKs provided by RATS Protocol, dApp developers can build various cross-chain applications.
 
 
-# MAP Protocol Use Case Examples
+# RATS Protocol Use Case Examples
 
 
 ## Omnichain Token Issuance
 
-When a project issues tokens, it often involves fragmented issuance across multiple chains, requiring users to navigate complex cross-chain exchanges through external bridges. However, with MAP Protocol, projects can achieve omnichain coverage at the beginning of token issuance, and the ledgers of different chains will be aligned automatically.
+When a project issues tokens, it often involves fragmented issuance across multiple chains, requiring users to navigate complex cross-chain exchanges through external bridges. However, with RATS Protocol, projects can achieve omnichain coverage at the beginning of token issuance, and the ledgers of different chains will be aligned automatically.
 
 Through cross-chain messaging, intrinsic cross-chain exchange interoperability is realized. Even though users may be unaware of the presence of multiple chains, the chain coverage is indeed multiple. This user experience is analogous to the usage of overseas and domestic currencies.
 
@@ -504,16 +504,16 @@ Through cross-chain messaging, intrinsic cross-chain exchange interoperability i
 
 If a user has funds on Chain A but wants to mine on Chain B, they typically need to go through 9 steps, each of which involves friction costs. Collateralize on Chain A → borrow → bridge (fee) → swap (fee) → farm on the destination chain → swap back (fee) → bridge back (fee) → repay the loan → un-collateralize.
 
-Through MAP Protocol, users can directly collateralize on Chain A, complete borrowing, mining, repayment, and collateral unlocking on the target chain, effectively skipping four instances of cross-chain bridge and exchange fees.
+Through RATS Protocol, users can directly collateralize on Chain A, complete borrowing, mining, repayment, and collateral unlocking on the target chain, effectively skipping four instances of cross-chain bridge and exchange fees.
 
 
 ## Omnichain Swap
 
-Omnichain Swap allows users to swap coins with substantially lower fees than traditional DeFi exchanges by connecting users to the best cross-chain DeFi protocols. By using MAP Protocol, developers can build a truly decentralized peer-to-peer omnichain exchange that enables users to swap any token on any chain.
+Omnichain Swap allows users to swap coins with substantially lower fees than traditional DeFi exchanges by connecting users to the best cross-chain DeFi protocols. By using RATS Protocol, developers can build a truly decentralized peer-to-peer omnichain exchange that enables users to swap any token on any chain.
 
 Omnichain swap achieves omnichain swap aggregation by connecting every major DEX liquidity. Existing AMMs can be wrapped to achieve omnichain swaps from one asset to another without the need to modify any existing code. Users can swap from $ETH on Ethereum to $NEAR on NEAR Protocol in one single transaction on the source chain.
 
-In an omnichain swap built with MAP Protocol, users can add multichain coin liquidity in one pool, which means providing liquidity to token pairs from different chains becomes possible. Users can swap one token directly for another token on a different chain without using any intermediate token, such as stablecoins, thus enjoying the shortest route for omnichain swap.
+In an omnichain swap built with RATS Protocol, users can add multichain coin liquidity in one pool, which means providing liquidity to token pairs from different chains becomes possible. Users can swap one token directly for another token on a different chain without using any intermediate token, such as stablecoins, thus enjoying the shortest route for omnichain swap.
 
 Butter Swap, the first truly decentralized cross-chain exchange that enables users to swap any token on any chain, includes all the above functionalities and officially launched on March 30, 2023.
 
@@ -524,14 +524,14 @@ With the rise of the cryptocurrency industry and the concept of the metaverse, m
 
 Omnichain and fully on-chain games extends beyond cross-chain but means that every aspect of the game other than the front end (the part of the game the player sees on their screen) is run solely using blockchain technology.  Even the narrative and governance for the development of the game will also be decentralized based on DAOs.
 
-MAP protocol supports different types of blockchains to cross-chain and interoperable. Through MAP Protocol, not only GameFi projects can connect to EVMs and non-EVMs, but also have their storage and computing on-chain. Additionally, since MAP Protocol Network actively connects with all types of chains, GameFi projects can fully focus on enhancing user experiences without concerning about any scalability and security issues.
+RATS protocol supports different types of blockchains to cross-chain and interoperable. Through RATS Protocol, not only GameFi projects can connect to EVMs and non-EVMs, but also have their storage and computing on-chain. Additionally, since RATS Protocol Network actively connects with all types of chains, GameFi projects can fully focus on enhancing user experiences without concerning about any scalability and security issues.
 
 
 ## On-Chain Data: On-chain Oracle and Derivatives
 
 Decentralized derivative and synthetic assets are usually constrained by the accuracy and timeliness of asset prices and quantities originating from other chains. Such issue can be solved by multi-chain deployment, but this is extremely complex.
 
-By building a reliable omnichain network, MAP Protocol has enabled Data cross-chain and is nurturing a completely new 预言机 (Oracle) market - On-Chain Oracle. By deploying on MAP Protocol Network, derivative and synthetic asset applications can easily acquire reliable multi-chain data from On-Chain Oracle.
+By building a reliable omnichain network, RATS Protocol has enabled Data cross-chain and is nurturing a completely new 预言机 (Oracle) market - On-Chain Oracle. By deploying on RATS Protocol Network, derivative and synthetic asset applications can easily acquire reliable multi-chain data from On-Chain Oracle.
 
 
 ## Omnichain Governance -- Aave
@@ -540,12 +540,12 @@ When Aave executes a proposal (which is established on the Ethereum network), th
 
 The Aave cross-chain governance bridge is built in a generic way to be easily adapted to operate with any chain that supports the EVM and cross-chain messaging. Currently, the repository supports contracts bridging to Polygon and Arbitrum. On Aave, users can submit Aave Improvement Protocols, or AIPs, to target various features on the DeFi platform.
 
-Although this solution seems fairly comprehensive, with the help of MAP Protocol's omnichain interoperability, governance on Aave could achieve omnichain management across all EVM and heterogeneous chains.
+Although this solution seems fairly comprehensive, with the help of RATS Protocol's omnichain interoperability, governance on Aave could achieve omnichain management across all EVM and heterogeneous chains.
 
 
 ## Fungible token and NFT Bridge
 
-Cross-chain bridges and cross-chain NFT bridges no longer have to build their infrastructure or use MPC. Using MAP Protocol’s peer-to-peer cross-chain verification network and the MOS application developer service kit, bridge developers can easily build their NFT or fungible token bridge application.
+Cross-chain bridges and cross-chain NFT bridges no longer have to build their infrastructure or use MPC. Using RATS Protocol’s peer-to-peer cross-chain verification network and the MOS application developer service kit, bridge developers can easily build their NFT or fungible token bridge application.
 
 
 ## AIGC + Web3
@@ -554,16 +554,16 @@ AI data generated by users when they interact with AIGC services can be stored o
 
 ## BRC-20 asset liquidity
 
-BRC-20 is an experimental standard for fungible tokens on the Bitcoin blockchain and inscribed on the Bitcoin network. MAP Protocol supports the cross-chain transfer of BRC-20 tokens from the Bitcoin network to the MAP Protocol network in a peer-to-peer manner. 
+BRC-20 is an experimental standard for fungible tokens on the Bitcoin blockchain and inscribed on the Bitcoin network. RATS Protocol supports the cross-chain transfer of BRC-20 tokens from the Bitcoin network to the RATS Protocol network in a peer-to-peer manner. 
 This enables other cryptocurrencies on different blockchains to be traded with BRC-20 assets in a more convenient and cost-effective way, enhancing the liquidity of inscription assets. This layer of interoperability helps expand the use cases of Bitcoin and integrates the Bitcoin ecosystem into a broader crypto-based financial ecosystem, bringing new contributions to the Bitcoin community.
 
 
 # Conclusion
 
-MAP Protocol is a Bitcoin layer-2 as well as a peer-to-peer omnichain network built upon light clients and ZK technology,  focused on cross-chain interoperability. It provides the essential omnichain infrastructure for achieving interoperability among blockchain-based assets, storage, and computing across EVM and non-EVM chains.
+RATS Protocol is a Bitcoin layer-2 as well as a peer-to-peer omnichain network built upon light clients and ZK technology,  focused on cross-chain interoperability. It provides the essential omnichain infrastructure for achieving interoperability among blockchain-based assets, storage, and computing across EVM and non-EVM chains.
 
-As an omnichain infrastructure, MAP Protocol does not rely on any trusted third party for cross-chain communication. The only trust is put in the code, which leverages the self-verifying nature of light clients to ensure cross-chain interaction in a completely peer-to-peer manner. When a cross-chain request occurs on the source chain, it is transmitted to the target chain via an off-chain role. Then, the light client deployed on the source chain will verify the validity of the cross-chain request sent by the off-chain role in a peer-to-peer manner.
+As an omnichain infrastructure, RATS Protocol does not rely on any trusted third party for cross-chain communication. The only trust is put in the code, which leverages the self-verifying nature of light clients to ensure cross-chain interaction in a completely peer-to-peer manner. When a cross-chain request occurs on the source chain, it is transmitted to the target chain via an off-chain role. Then, the light client deployed on the source chain will verify the validity of the cross-chain request sent by the off-chain role in a peer-to-peer manner.
 
-The security of MAP Protocol is further enhanced through the Bitcoin network.  All relevant information, such as epochs and the PoS consensus of the MAP Protocol Network, is written into the Bitcoin blockchain as transactions. This prevents[ long-range attacks](https://messari.io/report/long-range-attack) on the relay chain and further ensures the security of the relay chain by utilizing the security mechanisms of the Bitcoin network.
+The security of RATS Protocol is further enhanced through the Bitcoin network.  All relevant information, such as epochs and the PoS consensus of the RATS Protocol Network, is written into the Bitcoin blockchain as transactions. This prevents[ long-range attacks](https://messari.io/report/long-range-attack) on the relay chain and further ensures the security of the relay chain by utilizing the security mechanisms of the Bitcoin network.
 
-MAP Protocol is a flexible and innovative omnichain infrastructure as well as a platform for peer-to-peer cross-chain interoperability and Web3 dApp development, rather than a closed, single-use protocol specifically for a particular use case. It is open in terms of technical design and community development, and we look forward to serving as the foundation for many new financial and non-financial protocols.
+RATS Protocol is a flexible and innovative omnichain infrastructure as well as a platform for peer-to-peer cross-chain interoperability and Web3 dApp development, rather than a closed, single-use protocol specifically for a particular use case. It is open in terms of technical design and community development, and we look forward to serving as the foundation for many new financial and non-financial protocols.

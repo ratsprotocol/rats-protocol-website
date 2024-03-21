@@ -52,15 +52,15 @@ Furthermore, many DeFi platforms use Automated Market Maker (AMM) models to faci
 The DeFi ecosystem, known for its composability, high transparency, and decentralization, provides users with a decentralized model of financial services.
 
 
-# MAP Protocol and DeFi
+# RATS Protocol and DeFi
 
-MAP Protocol is perfect for DeFi for the following reasons.
+RATS Protocol is perfect for DeFi for the following reasons.
 
-By adopting Bitcoin-level peer-to-peer cross-chain technology, MAP Protocol enables asset and information transfer between different blockchains without relying on any third-party off-chain actors. This facilitates cross-chain operations in DeFi projects, increasing the liquidity of user assets and interoperability among DeFi projects across blockchains.
+By adopting Bitcoin-level peer-to-peer cross-chain technology, RATS Protocol enables asset and information transfer between different blockchains without relying on any third-party off-chain actors. This facilitates cross-chain operations in DeFi projects, increasing the liquidity of user assets and interoperability among DeFi projects across blockchains.
 
 Integrating Zero-Knowledge Proofs (ZK) further optimizes light client technology, improving cross-chain verification efficiency and enhancing privacy protection and product experience for DeFi users.
 
-As a bridge between different blockchains, MAP Protocol fosters the integration of diverse blockchain ecosystems, benefiting the expansion and ecosystem development of DeFi projects.
+As a bridge between different blockchains, RATS Protocol fosters the integration of diverse blockchain ecosystems, benefiting the expansion and ecosystem development of DeFi projects.
 
 
 # Build DeFi

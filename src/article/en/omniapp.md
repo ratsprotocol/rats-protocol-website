@@ -1,15 +1,15 @@
 ---
-title: "Omnichain dApp with MAP Protocol"
+title: "Omnichain dApp with RATS Protocol"
 description: 
 lang: en
 ---
 
 
-Omnichain dApp refers to decentralized apps that do not rely on any trusted third parties, but use truly decentralized methods to achieve cross-chain capabilities. You can use [MAP Protocol](/what-is-map-protocol), the peer-to-peer omnichain network focused on cross-chain interoperability, to build your Omnichain dAPp.
+Omnichain dApp refers to decentralized apps that do not rely on any trusted third parties, but use truly decentralized methods to achieve cross-chain capabilities. You can use [RATS Protocol](/what-is-map-protocol), the peer-to-peer omnichain network focused on cross-chain interoperability, to build your Omnichain dAPp.
 
-MAP Protocol decentralized cross-chain flow
+RATS Protocol decentralized cross-chain flow
 
-The following diagram illustrates the process for omnichain dApps to achieve decentralized cross-chain functionality, showing transactions related to dApp logic activities transmitted from Ethereum through the MAP Relay Chain to Polygon.
+The following diagram illustrates the process for omnichain dApps to achieve decentralized cross-chain functionality, showing transactions related to dApp logic activities transmitted from Ethereum through the RATS Relay Chain to Polygon.
 
 
 
@@ -24,25 +24,25 @@ The specific process is as follows:
 1. Users interact with the dApp logic contract on Ethereum.
 2. After the relevant logic is completed, the contract will call the *`TransferOut`* method in the MOS contract.
 3. The  *`TransferOut`*method will Emit an Event containing the calldata of the transaction in the logic contract.
-4. The Ethereum-MAPO Messenger will listen to this Event.
-5. The Ethereum-MAPO Messenger will construct proof data of the transaction that the Event is in.
-6. The Ethereum-MAPO Messenger will pass this proof data to the MAP Relay Chain through the *`TransferIn`* method in the MOS contract on the MAP Relay Chain.
-7. The *`TransferIn`* method will verify this proof data in the light client of Ethereum deployed on the MAP Relay Chain.
+4. The Ethereum-RAON Messenger will listen to this Event.
+5. The Ethereum-RAON Messenger will construct proof data of the transaction that the Event is in.
+6. The Ethereum-RAON Messenger will pass this proof data to the RATS Relay Chain through the *`TransferIn`* method in the MOS contract on the RATS Relay Chain.
+7. The *`TransferIn`* method will verify this proof data in the light client of Ethereum deployed on the RATS Relay Chain.
 8. If the verification is successful, an Event will be Emitted; its content also contains the same calldata as passed by the Messenger.
-9. The MAPO-Polygon Messenger will listen to this Event.
-10. The MAPO-Polygon Messenger will construct proof data of the transaction that the Event is in.
-11. The MAPO-Polygon Messenger will pass this proof data to Polygon through the TransferIn method in the MOS contract on Polygon.
-12. The *`TransferIn`* method will verify this proof data in the light client of the MAP Relay Chain deployed on Polygon.
+9. The RAON-Polygon Messenger will listen to this Event.
+10. The RAON-Polygon Messenger will construct proof data of the transaction that the Event is in.
+11. The RAON-Polygon Messenger will pass this proof data to Polygon through the TransferIn method in the MOS contract on Polygon.
+12. The *`TransferIn`* method will verify this proof data in the light client of the RATS Relay Chain deployed on Polygon.
 13. If the verification is successful, the MOS contract will call the logic contract of the all-chain dApp on Polygon and execute the passed calldata.
 14. The logic contract of the all-chain dApp can Emit an Event similar to 'execution completed'.
 
 
-# **MAP Protocol OmniAPp Key Components**
+# **RATS Protocol OmniAPp Key Components**
 
 
 ## **[MOS Contract](https://github.com/mapprotocol/mapo-service-contracts/blob/main/evm/contracts/MapoServiceV3.sol)**
 
-The MAPO Omnichain Service Contract is the core contract of MAP Protocol responsible for cross-chain message transmission. MOS Contracts are deployed on the source chain, MAP Relay Chain, and target chain to send, undertake, and receive cross-chain messages. The omnichain dApp involves two key methods:
+The RAON Omnichain Service Contract is the core contract of RATS Protocol responsible for cross-chain message transmission. MOS Contracts are deployed on the source chain, RATS Relay Chain, and target chain to send, undertake, and receive cross-chain messages. The omnichain dApp involves two key methods:
 
 **TransferOut**
 
@@ -78,7 +78,7 @@ The transferIn method will be called by the Messenger and pass the constructed t
 
 ## **[Messenger](https://github.com/mapprotocol/compass)**
 
-Messenger is a non-privileged inter-chain program responsible for cross-chain message transmission in the MAP Protocol. Its main responsibilities:
+Messenger is a non-privileged inter-chain program responsible for cross-chain message transmission in the RATS Protocol. Its main responsibilities:
 
 
 
@@ -86,12 +86,12 @@ Messenger is a non-privileged inter-chain program responsible for cross-chain me
 * Call the MOS's TransferIn method to complete the transmission of cross-chain proof data and its contained cross-chain messages.
 
 
-### **[MAPO Executor](https://github.com/mapprotocol/mapo-service-contracts/blob/main/evm/contracts/interface/IMapoExecutor.sol)**
+### **[RAON Executor](https://github.com/mapprotocol/mapo-service-contracts/blob/main/evm/contracts/interface/IMapoExecutor.sol)**
 
-The MAPO Executor is an interface that developers need to implement themselves, allowing the MOS contract to execute the specific logic of the all-chain dApp when called on the target chain.
+The RAON Executor is an interface that developers need to implement themselves, allowing the MOS contract to execute the specific logic of the all-chain dApp when called on the target chain.
 
 ```
-    function mapoExecute (uint256 _fromChain, uint256 _toChain, bytes calldata _fromAddress, bytes32 _orderId, bytes calldata _message）
+    function raonExecute (uint256 _fromChain, uint256 _toChain, bytes calldata _fromAddress, bytes32 _orderId, bytes calldata _message）
 
 ```
 
@@ -106,17 +106,17 @@ The MAPO Executor is an interface that developers need to implement themselves, 
 
 # **Possible Examples of Omnichain dApp**
 
-Through the MAP Protocol's omnichain interoperability infrastructure, developers can design and develop many creative and practically meaningful Omni-DApps. Here we list some possibilities.
+Through the RATS Protocol's omnichain interoperability infrastructure, developers can design and develop many creative and practically meaningful Omni-DApps. Here we list some possibilities.
 
 
 ## **Omni-DeFi**
 
-Omnichain DeFi refers to protocols that can accept different assets from different chains to participate in economic activities by leveraging the underlying infrastructure of MAP Protocol.
+Omnichain DeFi refers to protocols that can accept different assets from different chains to participate in economic activities by leveraging the underlying infrastructure of RATS Protocol.
 
 
 ## **Omni-Swap**
 
-Omni-Swap aims to enable users to easily complete asset exchanges across different chains by creating liquidity pools on different chains along with the non-privileged role of MAP Protocol for cross-chain message transmission.
+Omni-Swap aims to enable users to easily complete asset exchanges across different chains by creating liquidity pools on different chains along with the non-privileged role of RATS Protocol for cross-chain message transmission.
 
 
 ## **Omni-Loan**
@@ -145,6 +145,6 @@ Omni-DID is an all-chain ID/domain name system that allows users' Omni-DIDs to b
 
 ## BRC-20 asset liquidity
 
-BRC-20 is an experimental standard for fungible tokens on the Bitcoin blockchain and inscribed on the Bitcoin network. MAP Protocol supports the cross-chain transfer of BRC-20 tokens from the Bitcoin network to the MAP Protocol network in a peer-to-peer manner.
+BRC-20 is an experimental standard for fungible tokens on the Bitcoin blockchain and inscribed on the Bitcoin network. RATS Protocol supports the cross-chain transfer of BRC-20 tokens from the Bitcoin network to the RATS Protocol network in a peer-to-peer manner.
 
 This enables other cryptocurrencies on different blockchains to be traded with BRC-20 assets in a more convenient and cost-effective way, enhancing the liquidity of inscription assets. This layer of interoperability helps expand the use cases of Bitcoin and integrates the Bitcoin ecosystem into a broader crypto-based financial ecosystem, bringing new contributions to the Bitcoin community.

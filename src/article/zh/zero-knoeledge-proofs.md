@@ -49,4 +49,4 @@ lang: zh
 
 # 使用 ZK-proof 改造轻客户端技术
 
-尽管使用轻客户端进行验证比如多方计算（MPC）等解决方案更安全、更去中心化，但这样的网络所消耗的 gas 费用更多，这将不足以有效和实用地服务于点对点跨链目的。为了提高效率，MAP Protocol 已经[用 ZK-proof 改造了轻客户端验证网络](/article?id=refactor-light-clients-with-ZK-proof)，以便轻客户端可以验证一个区块头是有效的 [ZK-SNARK](https://www.youtube.com/watch?v=h-94UhJLeck) 证明。
+尽管使用轻客户端进行验证比如多方计算（MPC）等解决方案更安全、更去中心化，但这样的网络所消耗的 gas 费用更多，这将不足以有效和实用地服务于点对点跨链目的。为了提高效率，RATS Protocol 已经[用 ZK-proof 改造了轻客户端验证网络](/article?id=refactor-light-clients-with-ZK-proof)，以便轻客户端可以验证一个区块头是有效的 [ZK-SNARK](https://www.youtube.com/watch?v=h-94UhJLeck) 证明。

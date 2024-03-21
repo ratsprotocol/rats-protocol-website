@@ -5,12 +5,12 @@ lang: en
 ---
 
 
-MAP Protocol 在全链协议中主要负责**跨链消息的传递**，协议中核心业务逻辑例如**资产管理、质押、Mint/Burn 等都是由全链 dApp 自主完成并维护**。
+RATS Protocol 在全链协议中主要负责**跨链消息的传递**，协议中核心业务逻辑例如**资产管理、质押、Mint/Burn 等都是由全链 dApp 自主完成并维护**。
 
 
-#  MAP Protocol 去中心化跨链流程示意
+#  RATS Protocol 去中心化跨链流程示意
 
-以下为全链 dApp 实现**去中心化跨链**的流程示意图，展示了与dApp 逻辑活动相关的交易**从Ethereum 经过 MAP Relay Chain 传递到 Polygon**。
+以下为全链 dApp 实现**去中心化跨链**的流程示意图，展示了与dApp 逻辑活动相关的交易**从Ethereum 经过 RATS Relay Chain 传递到 Polygon**。
 
 
 
@@ -27,25 +27,25 @@ MAP Protocol 在全链协议中主要负责**跨链消息的传递**，协议中
 1. 用户与在Ethereum dApp 逻辑合约中发生交互
 2. 在相应相关逻辑完成后，该合约会去**调用MOS合约**中的TransferOut方法
 3. **TransferOut**方法会Emit出相应的Event，该Event中包含了逻辑合约中交易的calldata
-4. Ethereum-MAPO Messenger会监听到这个Event
-5. Ethereum-MAPO Messenger会构建该Event所在交易的证明数据
-6. Ethereum-MAPO Messenger会将该证明数据通过**调用MAP Relay Chain上MOS合约**的TransferIn 方法传递至MAP Relay Chain
-7. **TransferIn**方法会去**部署在MAP Relay Chain上的Ethereum的轻客户端中验证该证明数据**
+4. Ethereum-RAON Messenger会监听到这个Event
+5. Ethereum-RAON Messenger会构建该Event所在交易的证明数据
+6. Ethereum-RAON Messenger会将该证明数据通过**调用RATS Relay Chain上MOS合约**的TransferIn 方法传递至RATS Relay Chain
+7. **TransferIn**方法会去**部署在RATS Relay Chain上的Ethereum的轻客户端中验证该证明数据**
 8. 如果验证成功，会Emit出相应的Event；其内容也包含了Messenger所传递的Event中的相同calldata
-9. MAPO-Polygon Messenger会监听到这个Event
-10. MAPO-Polygon Messenger会构建该Event所在交易的证明数据
-11. MAPO-Polygon Messenger会将该证明数据通过调用Polygon上MOS合约的TransferIn 方法传递至Polygon
-12. TransferIn方法会去部署在 Polygon上的 MAP Relay Chain的轻客户端中验证该证明数据
+9. RAON-Polygon Messenger会监听到这个Event
+10. RAON-Polygon Messenger会构建该Event所在交易的证明数据
+11. RAON-Polygon Messenger会将该证明数据通过调用Polygon上MOS合约的TransferIn 方法传递至Polygon
+12. TransferIn方法会去部署在 Polygon上的 RATS Relay Chain的轻客户端中验证该证明数据
 13. 如果验证成功，MOS 合约会去调用 Polygon上全链DAPP的逻辑合约并执行所传递的calldata
 14. 全链DAPP的逻辑合约可以Emit出‘执行完成’类似的Event
 
 
-# 🛠 MAPO DApps 关键技术要件
+# 🛠 RAON DApps 关键技术要件
 
 
 ### **📖 [MOS Contract](https://github.com/mapprotocol/mapo-service-contracts/blob/main/evm/contracts/MapoServiceV3.sol)**
 
-MAPO Omnichain Service Contract 是 MAP Protocol负责跨链消息传递的核心合约。在源链，MAP Relay Chain，以及目标链都会部署相应的MOS Contract用来发送、承接以及接受跨链消息，其中全链 dApp 会涉及到两个关键方法：
+MAPO Omnichain Service Contract 是 RATS Protocol负责跨链消息传递的核心合约。在源链，RATS Relay Chain，以及目标链都会部署相应的MOS Contract用来发送、承接以及接受跨链消息，其中全链 dApp 会涉及到两个关键方法：
 
 **TransferOut**
 
@@ -79,7 +79,7 @@ function transferIn(uint256 _chainId, bytes memory _receiptProof)
 ### **[Messenger](https://github.com/mapprotocol/compass)**
 
 
-Messenger是MAP Protocol负责跨链消息传递的无特权的链间程序。它的主要职责：
+Messenger是RATS Protocol负责跨链消息传递的无特权的链间程序。它的主要职责：
 
 
 
@@ -87,13 +87,13 @@ Messenger是MAP Protocol负责跨链消息传递的无特权的链间程序。�
 * 调用MOS的TransferIn方法来完成跨链的证明数据以及其包含的跨链消息的传递；
 
 
-### **[MAPO Executor](https://github.com/mapprotocol/mapo-service-contracts/blob/main/evm/contracts/interface/IMapoExecutor.sol)**
+### **[RAON Executor](https://github.com/mapprotocol/mapo-service-contracts/blob/main/evm/contracts/interface/IMapoExecutor.sol)**
 
 
-MAPO Executor 是一个需要开发者自己实现的interface，可以让MOS合约在目标链调用时执行全链Dapp的具体逻辑
+RAON Executor 是一个需要开发者自己实现的interface，可以让MOS合约在目标链调用时执行全链Dapp的具体逻辑
 
 ```
-function mapoExecute (uint256 _fromChain, uint256 _toChain, bytes calldata _fromAddress, bytes32 _orderId, bytes calldata _message）
+function raonExecute (uint256 _fromChain, uint256 _toChain, bytes calldata _fromAddress, bytes32 _orderId, bytes calldata _message）
 
 ```
 
@@ -107,7 +107,7 @@ function mapoExecute (uint256 _fromChain, uint256 _toChain, bytes calldata _from
 
 ### **[MOS Contract](https://github.com/mapprotocol/mapo-service-contracts/blob/main/evm/contracts/MapoServiceV3.sol)**
 
-MAPO Omnichain Service Contract 是 MAP Protocol负责跨链消息传递的核心合约。在源链，MAP Relay Chain，以及目标链都会部署相应的MOS Contract用来发送、承接以及接受跨链消息，其中全链 dApp 会涉及到两个关键方法：
+RAON Omnichain Service Contract 是 RAON Protocol负责跨链消息传递的核心合约。在源链，RATS Relay Chain，以及目标链都会部署相应的MOS Contract用来发送、承接以及接受跨链消息，其中全链 dApp 会涉及到两个关键方法：
 
 **TransferOut**
 
@@ -138,19 +138,19 @@ function transferIn(uint256 _chainId, bytes memory _receiptProof)
 
 # OmniApp 的可能形式
 
-💡 通过 MAP Protocol 全链互操作基础设施，开发者可以设计和开发出许多有创意、并具有实际意义的Omni-DApps，我们在这里列举一些可能性。
+💡 通过 RATS Protocol 全链互操作基础设施，开发者可以设计和开发出许多有创意、并具有实际意义的Omni-DApps，我们在这里列举一些可能性。
 
 
 ## **Omni-DeFi**
 
 
-    全链 DeFi 协议指的是**借助 MAP Protocol 的底层基础设施**，可以接受来自不同链上的不同资产来参与经济活动的协议。
+    全链 DeFi 协议指的是**借助 RATS Protocol 的底层基础设施**，可以接受来自不同链上的不同资产来参与经济活动的协议。
 
 
 ## **Omni-Swap**
 
 
-    Omni-Swap是意在通过在不同的链上所创建流动性池加上MAP Protocol 无特权角色的跨链消息传递，使得用户可以**轻松完成不同链上的资产兑换**；
+    Omni-Swap是意在通过在不同的链上所创建流动性池加上RATS Protocol 无特权角色的跨链消息传递，使得用户可以**轻松完成不同链上的资产兑换**；
 
 
 ## **Omni-Loan**

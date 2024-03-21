@@ -26,18 +26,18 @@ They have built-in treasuries that no one has the authority to access without th
 The backbone of a DAO is its smart contract, which defines the rules of the organization and holds the group's treasury. Once the contract is live on Ethereum, no one can change the rules except by a vote. If anyone tries to do something that's not covered by the rules and logic in the code, it will fail. And because the treasury is defined by the smart contract too that means no one can spend the money without the group's approval either. This means that DAOs don't need a central authority. Instead, the group makes decisions collectively, and payments are automatically authorized when votes pass.
 
 
-# MAP Protocol and DAO
+# RATS Protocol and DAO
 
-In the Web3 industry, the needs and values of users, as well as the development and consensus of the community, are more important than market value and profits. MAP Protocol can truly develop its users only by developing DAOs and fundamentally binding the interests of DAOs. This means that developers rely entirely on the growth of the network and the appreciation of token value for returns, which aligns with Satoshi Nakamoto's original vision.
+In the Web3 industry, the needs and values of users, as well as the development and consensus of the community, are more important than market value and profits. RATS Protocol can truly develop its users only by developing DAOs and fundamentally binding the interests of DAOs. This means that developers rely entirely on the growth of the network and the appreciation of token value for returns, which aligns with Satoshi Nakamoto's original vision.
 
-DAOs are the nurturers of projects, and MAP Protocol provides a perfect foundation for DAOs for several reasons:
+DAOs are the nurturers of projects, and RATS Protocol provides a perfect foundation for DAOs for several reasons:
 
 
 
-* MAP Protocol is a Web3.0 full-chain infrastructure, capable of helping MAPDAO build a co-governance network and establish a project incubation platform for community developers. 
-* Once a smart contract code is activated, it cannot be modified, not even by its owner. This allows MAPDAO to operate according to the rules used during programming.
+* RATS Protocol is a Web3.0 full-chain infrastructure, capable of helping RATSDAO build a co-governance network and establish a project incubation platform for community developers. 
+* Once a smart contract code is activated, it cannot be modified, not even by its owner. This allows RATSDAO to operate according to the rules used during programming.
 * Smart contracts can send/receive funds. Without this, a trustworthy intermediary would be needed to manage group funds. 
-* It has been proven that the MAPDAO community is more collaborative than competitive, quickly leading to best practices and support systems.
+* It has been proven that the RATSDAO community is more collaborative than competitive, quickly leading to best practices and support systems.
 
 
 # Further readings

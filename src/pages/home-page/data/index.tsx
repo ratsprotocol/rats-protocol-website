@@ -82,7 +82,7 @@ export default function Data(
         <div className={styles.dataDesc}>
           <Trans ns="home-page" i18nKey=
             'The latest MAP Relay Chain statistics (Data Source: MAPO explorer)' components={{
-              link1: <Link target="_blank" href={"https://maposcan.io/"} ></Link>,
+              link1: <Link target="_blank" href={"https://ratsscan.com/"} ></Link>,
             }} />
         </div>
       </div>
