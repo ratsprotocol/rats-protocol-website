@@ -39,7 +39,7 @@ lang: zh
 
 [//]: # (Telegram [@RATSprotocol]&#40;https://t.me/MAPprotocol&#41;– RATS Protocol 的唯一官方 Telegram 社区)
 
-Twitter [@RATSProtocol](https://twitter.com/Rats_Chain) – RATS Protocol 的唯一官方 Twitter 账号
+Twitter [@RATSProtocol](https://twitter.com/RatsChain_CN) – RATS Protocol 的唯一中文官方 Twitter 账号
 
 [//]: # (Medium [@RATSProtocol]&#40;https://medium.com/mapprotocol&#41;– 来自 RATS Protocol 的最新文章)
 

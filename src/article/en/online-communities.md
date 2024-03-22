@@ -43,7 +43,7 @@ Hundreds of thousands of RATS Protocol members gather in these online forums to 
 
 [//]: # (Telegram [@RATSProtocol ]&#40;https://t.me/MAPprotocol&#41;– the only official Telegram community of RATS Protocol)
 
-X (Twitter) [@RATSProtocol](https://twitter.com/Rats_Chain) – the only official Twitter account of RATS Protocol
+X (Twitter) [@RATSProtocol](https://twitter.com/RatsChain_EN) – the only English official Twitter account of RATS Protocol
 
 [//]: # (Medium [@RATSProtocol ]&#40;https://medium.com/mapprotocol&#41;– the most up-to-date write-ups from RATS Protocol)
 

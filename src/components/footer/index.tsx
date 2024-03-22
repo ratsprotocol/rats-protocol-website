@@ -33,7 +33,7 @@ const iconArray = [
     // },
     {
         src: '/fonts/x.svg',
-        link: 'https://twitter.com/Rats_Chain'
+        link: 'https://twitter.com/RatsChain_EN'
     },
    
 ]
@@ -60,22 +60,22 @@ export const footerArray: TabsArray = {
             path: '/community'
         },
         {
-            name: 'MAPDAO',
+            name: 'RATSDAO',
             path: '/article?id=learn-about-MAPDAO'
 
         },
         {
-            name: 'MAP Protocol community grant',
+            name: 'RATS Protocol community grant',
             path: 'https://forum.mapprotocol.io/t/map-community-contributor-grants-program/3988'
 
         },
         {
-            name: 'MAP Protocol research grant',
+            name: 'RATS Protocol research grant',
             path: 'https://forum.mapprotocol.io/t/about-the-academy-category/3989'
 
         },
         {
-            name: 'MAP Protocol builder grant',
+            name: 'RATS Protocol builder grant',
             path: 'https://forum.mapprotocol.io/t/stay-updated-for-the-next-openning-map-omnichain-builder-grants-program/3980'
 
         },
