@@ -195,7 +195,7 @@ export const tabsArray: TabsArray = {
         },
         {
             name: 'MAPO testnet explorer',
-            path: 'https://testnet.maposcan.io/'
+            path: 'https://test.ratsscan.com'
 
         },
         {

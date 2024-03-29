@@ -26,7 +26,7 @@ There are two ways for you to add RATS Protocol Network or RATS Mainnet, directl
 * New RPC URL: https://rpc.maplabs.io
 * Chain ID: 22776
 * Currency symbol: RAON
-* Block explorer URL: https://maposcan.io/
+* Block explorer URL: https://ratsscan.com/
 2. **Add via Chainlist**
 
     Go to  [https://chainlist.org/?search=RAON](https://chainlist.org/?search=MAPO) and choose “Add to Metamask.”
@@ -51,7 +51,7 @@ There are two ways for you to add RATS Protocol Network or RATS Mainnet, directl
     * New RPC URL: https://rpc.maplabs.io
     * Chain ID: 22776
     * Currency symbol: RAON
-    * Block explorer URL: [https://maposcan.io/](https://maposcan.io/)
+    * Block explorer URL: [https://ratsscan.com/](https://ratsscan.com/)
 
 
 

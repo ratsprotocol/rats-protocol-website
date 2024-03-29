@@ -28,8 +28,8 @@ export default function GetMapFaqs() {
                         <div >{t('Chain ID: 22776')}</div>
                         <div >{t("Currency symbol: MAPO")}</div>
                         <div >
-                            <Trans ns="get-map-2" i18nKey="Block explorer URL: https://maposcan.io/" components={{
-                                link1: <Link target="_blank" href={"https://maposcan.io/"} className={styles.linkText}></Link>
+                            <Trans ns="get-map-2" i18nKey="Block explorer URL: https://ratsscan.com/" components={{
+                                link1: <Link target="_blank" href={"https://ratsscan.com/"} className={styles.linkText}></Link>
                             }} /></div>
                     </Li>
                 </Ul>
@@ -106,7 +106,7 @@ export default function GetMapFaqs() {
                 link2: <Link target="_blank" href={"https://bscscan.com/"} className={styles.linkText}></Link>,
                 link3: <Link target="_blank" href={"https://polygonscan.com/"} className={styles.linkText}></Link>,
                 link4: <Link target="_blank" href={"https://scope.klaytn.com/"} className={styles.linkText}></Link>,
-                link5: <Link target="_blank" href={"https://maposcan.io/"} className={styles.linkText}></Link>
+                link5: <Link target="_blank" href={"https://ratsscan.com/"} className={styles.linkText}></Link>
             }} />
         },
         {

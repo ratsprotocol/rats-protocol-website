@@ -46,7 +46,7 @@ export default function GetMapFaqs() {
                 <div>{t('Since you are staking through a validator pool, the performance and reputation of the validator can affect your rewards. Validators that consistently produce blocks and maintain a high level of uptime may offer better rewards to their delegators.')}</div>
                 <div >
                     <Trans ns="stake-mapo" i18nKey="You can have multiple accounts for staking, but you cannot use one address for staking and another for receiving rewards. The staking address, once set, is the address of your consensus funds – both initial and subsequent rewards – and cannot be changed. Thus, please keep this address properly backed up and securely stored." components={{
-                        link1: <Link target="_blank" href={"https://maposcan.io/validators?page=1&size=10"} className={styles.linkText}></Link>,
+                        link1: <Link target="_blank" href={"https://ratsscan.com/validators?page=1&size=10"} className={styles.linkText}></Link>,
                         link2: <Link target="_blank" href={"https://forum.mapprotocol.io/c/validator/9"} className={styles.linkText}></Link>
 
                     }} /></div>
@@ -73,7 +73,7 @@ export default function GetMapFaqs() {
             content: <><div>{t("Since the validator(s) you choose will directly impact your rewards, it’s essential that you do some research before you decide to vote for a certain validator. Some general metrics to look out for when selecting: Current epoch activity rate, social media presence, and commission percentage.")}</div>
                 <div >
                     <Trans ns="stake-mapo" i18nKey="You can have multiple accounts for staking, but you cannot use one address for staking and another for receiving rewards. The staking address, once set, is the address of your consensus funds – both initial and subsequent rewards – and cannot be changed. Thus, please keep this address properly backed up and securely stored." components={{
-                        link1: <Link target="_blank" href={"https://maposcan.io/validators?page=1&size=10"} className={styles.linkText}></Link>,
+                        link1: <Link target="_blank" href={"https://ratsscan.com/validators?page=1&size=10"} className={styles.linkText}></Link>,
                         link2: <Link target="_blank" href={"https://forum.mapprotocol.io/c/validator/9"} className={styles.linkText}></Link>
 
                     }} /></div>
@@ -83,7 +83,7 @@ export default function GetMapFaqs() {
             title: t('What are the factors that may affect the staking rewards?'),
             content: <> <div>{t('Staking rewards are subject to fluctuation depending on the validator(s) you choose, the number of staking participants that are staking, transaction volume and other factors.')}</div>
                 <div><Trans ns="stake-mapo" i18nKey="At the time of posting, stakers on MAP Protocol are earning staking rewards of 13.12% APY. For the most up-to-date information, head to MAPO Scan." components={{
-                    link1: <Link target="_blank" href={"https://maposcan.io/validators?page=1&size=10"} className={styles.linkText}></Link>,
+                    link1: <Link target="_blank" href={"https://ratsscan.com/validators?page=1&size=10"} className={styles.linkText}></Link>,
 
                 }} /></div>
             </>

@@ -23,7 +23,7 @@
 ## Testnet - Makalu
 | comment       | address                                                        |
 |---------------|----------------------------------------------------------------|
-| Explorer      | [https://testnet.maposcan.io](https://testnet.maposcan.io)     |
+| Explorer      | [https://test.ratsscan.com/](https://test.ratsscan.com/)       |
 | RPC           | https://testnet-rpc.maplabs.io                                 |
 | RPC Websocket | wss://testnet-rpc.maplabs.io                                   |
 | Faucet        | [https://faucet.mapprotocol.io](https://faucet.mapprotocol.io) |

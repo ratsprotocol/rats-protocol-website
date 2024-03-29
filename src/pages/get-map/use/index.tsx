@@ -81,7 +81,7 @@ export default function UseMapCoin() {
 
                     <div className={styles.subtitle}>{t('Check MAPO Transactions')} </div>
                     <div className={styles.content}>  <Trans ns="get-map-2" i18nKey="You can check your MAPO transactions on MAPO Scan, a blockchain explorer for developers and users to monitor cross-chain transactions and activities on the MAP Relay Chain more efficiently." components={{
-                        link1: <Link target="_blank" href={"https://maposcan.io/"} ></Link>
+                        link1: <Link target="_blank" href={"https://ratsscan.com/"} ></Link>
                     }} />
                     </div>
 

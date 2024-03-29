@@ -89,7 +89,7 @@ export default function Body(
           <div className={styles.desc}>{t('Generally, staking is the process of participating in a proof-of-stake (PoS) or a similar consensus mechanism to support the operations of a blockchain network. Participants lock up a certain amount of cryptocurrency in a wallet to help validate transactions, secure the network, and produce new blocks. In return, participants usually receive additional tokens as rewards, potentially leading to a stream of passive income.')}</div>
           <div className={styles.desc}>{
             <Trans ns="stake-mapo" i18nKey="In MAP Protocol, staking is the act of locking certain amounts of MAPO into the MAPO Validator Pool. Both validators and users can participate in staking." components={{
-              link1: <Link target="_blank" href={"https://maposcan.io/validators?page=1&size=10"} className={styles.linkText}></Link>
+              link1: <Link target="_blank" href={"https://ratsscan.com/validators?page=1&size=10"} className={styles.linkText}></Link>
             }} />}</div>
           <div className={styles.desc}>{t('Once validators have configured their Validator node, they need to have 1 Million MAPO in their staking pool. Users can participate in staking by delegating their MAPO to the stake of a particular Validator; in this way, they help that Validator operate and earn a percentage of rewards based on their stake.')}</div>
 
@@ -126,7 +126,7 @@ export default function Body(
             <div className={styles.li}> {t('To stake successfully, you need to have MAPO in your wallet first. You can get MAPO via Butter Swap. Once you have MAPO ready in your wallet, you can proceed as below.')}</div>
             <div className={styles.moreButton}>
               <Button onClick={() => {
-                window.open('https://maposcan.io/validators?page=1&size=10')
+                window.open('https://ratsscan.com/validators?page=1&size=10')
               }} variant="contained">{t('Get MAPO')}</Button>
             </div>
             <div className={styles.stepTitle} style={{
@@ -180,7 +180,7 @@ export default function Body(
             </div>
             <div className={styles.li}> {t('Once you have locked certain amounts of MAPO, you can select the validator(s) you would like to delegate your MAPO to. The act of selecting a validator is referred to as “Vote”.')}</div>
             <div className={styles.li}> {<Trans ns="stake-mapo" i18nKey="Visit the validator pool info page and review their performance before you decide on the validator(s) you would like to vote for. You can also read the validators’ intro on the MAP Protocol Validator forum page to see why you should vote for a certain validator." components={{
-              link1: <Link target="_blank" href={"https://maposcan.io/validators?page=1&size=10"} className={styles.linkText}></Link>,
+              link1: <Link target="_blank" href={"https://ratsscan.com/validators?page=1&size=10"} className={styles.linkText}></Link>,
               link2: <Link target="_blank" href={"https://forum.mapprotocol.io/c/validator/9"} className={styles.linkText}></Link>
 
             }} />}</div>

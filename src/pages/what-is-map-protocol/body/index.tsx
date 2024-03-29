@@ -132,8 +132,8 @@ export default function ColorsContent(
                         }}
                     >
                         <Typography sx={{ padding: '8px 16px', marginTop: '2px' }}>{t('Data Source: ')}
-                            <Link href="https://maposcan.io/" target="_blank" >
-                                {'maposcan.io'}
+                            <Link href="https://ratsscan.com/" target="_blank" >
+                                {'ratsscan.com'}
                             </Link></Typography>
                     </Popover>
                 </div>

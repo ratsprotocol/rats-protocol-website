@@ -430,7 +430,7 @@ As an omnichain infrastructure, RATS Protocol is dedicated to building an open e
 ![alt_text](/images/article/images/whitepaper-9.png "image_tooltip")
 
 
-The total supply of RAON is 100 billion. RATS Protocol’s token allocation is in line with incentivizing RATS Protocol's network’s block generation, network maintenance, ecosystem development, and community growth. Detailed distribution and predetermined ratio is as follows:
+The total supply of RAON is 10 billion. RATS Protocol’s token allocation is in line with incentivizing RATS Protocol's network’s block generation, network maintenance, ecosystem development, and community growth. Detailed distribution and predetermined ratio is as follows:
 
 
 

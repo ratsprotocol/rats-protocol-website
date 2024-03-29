@@ -26,7 +26,7 @@ _注意：RAON 是 RATS Protocol 在 RATS Protocol 网络 上的原生代币的�
 * 新 RPC URL：https://rpc.maplabs.io
 * 链 ID：22776
 * 货币符号：RAON
-* 区块浏览器 URL：https://maposcan.io/
+* 区块浏览器 URL：https://ratsscan.com/
 2. **通过 Chainlist 添加**
 
     访问 [https://chainlist.org/?search=RAON](https://chainlist.org/?search=MAPO) 并选择 “添加到 Metamask”。
@@ -50,7 +50,7 @@ _注意：RAON 是 RATS Protocol 在 RATS Protocol 网络 上的原生代币的�
     * 新 RPC URL：https://rpc.maplabs.io
     * 链 ID：22776
     * 货币符号：RAON
-    * 区块浏览器 URL：[https://maposcan.io/](https://maposcan.io/)
+    * 区块浏览器 URL：[https://ratsscan.com/](https://ratsscan.com/)
 
 
 
