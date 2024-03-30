@@ -122,35 +122,35 @@ export default function Data(
       </div>
 
 
-      <div className={styles.contribute}>
-        <div className={styles.contributeLeft}>
-          <div className={styles.contributeTitle}>{t('Join MAP Protocol community')}</div>
-          <div className={styles.contributeDesc}>{t('Join over 5,000 members on MAPDAO Discord community!')}</div>
-          <div className={styles.contributeDesc}>{t("We hold monthly community calls for exciting updates on MAP Protocol development and important ecosystem news. Get the chance to ask questions, share ideas, and contribute in different ways —  it's the perfect opportunity to be part of the thriving MAPDAO community.")}</div>
-          <div   className={styles.button}>
-            <Button
-              onClick={
-                () => {
-                  window.open('https://tally.so/r/wgdPal')
-                }}
-               variant="contained">{t('Join MAPDAO')}</Button>
-            <Button
-              onClick={
-                () => {
-                Router.push('/article?id=learn-about-MAPDAO')
-                }}
-              style={{
-              }} variant="outlined">{t('Learn about MAPDAO')}</Button>
-          </div>
-        </div>
-        <div className={styles.contributeImage}>
-          <Image
-            fill
-            style={{ objectFit: "contain" }}
-            src="/images/community/community-1.png"
-            alt="community-1" />
-        </div>
-      </div>
+      {/*<div className={styles.contribute}>*/}
+      {/*  <div className={styles.contributeLeft}>*/}
+      {/*    <div className={styles.contributeTitle}>{t('Join MAP Protocol community')}</div>*/}
+      {/*    <div className={styles.contributeDesc}>{t('Join over 5,000 members on MAPDAO Discord community!')}</div>*/}
+      {/*    <div className={styles.contributeDesc}>{t("We hold monthly community calls for exciting updates on MAP Protocol development and important ecosystem news. Get the chance to ask questions, share ideas, and contribute in different ways —  it's the perfect opportunity to be part of the thriving MAPDAO community.")}</div>*/}
+      {/*    <div   className={styles.button}>*/}
+      {/*      <Button*/}
+      {/*        onClick={*/}
+      {/*          () => {*/}
+      {/*            window.open('https://tally.so/r/wgdPal')*/}
+      {/*          }}*/}
+      {/*         variant="contained">{t('Join MAPDAO')}</Button>*/}
+      {/*      <Button*/}
+      {/*        onClick={*/}
+      {/*          () => {*/}
+      {/*          Router.push('/article?id=learn-about-MAPDAO')*/}
+      {/*          }}*/}
+      {/*        style={{*/}
+      {/*        }} variant="outlined">{t('Learn about MAPDAO')}</Button>*/}
+      {/*    </div>*/}
+      {/*  </div>*/}
+      {/*  <div className={styles.contributeImage}>*/}
+      {/*    <Image*/}
+      {/*      fill*/}
+      {/*      style={{ objectFit: "contain" }}*/}
+      {/*      src="/images/community/community-1.png"*/}
+      {/*      alt="community-1" />*/}
+      {/*  </div>*/}
+      {/*</div>*/}
 
       <CardList />
     </view>

@@ -27,7 +27,7 @@ export default function ColorsContent(
                         <Button
                             onClick={
                                 () => {
-                                    Router.push('/what-is-map-protocol')
+                                    Router.push('/what-is-rats-protocol')
                                 }}
                             variant="contained">{t('More on MAP Protocol')}</Button></div>
                 </div>
@@ -193,7 +193,8 @@ export default function ColorsContent(
                         <Button
                             onClick={
                                 () => {
-                                    window.open(router.locale == 'zh' ? 'https://mapo.gitbook.io/docs-zh/' : 'https://mapo.gitbook.io/docs-en/')
+                                    // window.open(router.locale == 'zh' ? 'https://mapo.gitbook.io/docs-zh/' : 'https://mapo.gitbook.io/docs-en/')
+                                    Router.push('/what-is-rats-protocol')
                                 }}
 
                             variant="contained">{t('View documentation')}</Button>

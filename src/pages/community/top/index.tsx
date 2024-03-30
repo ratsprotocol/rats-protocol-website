@@ -69,26 +69,26 @@ export default function HomePageTop(
   }]
 
   const getStartCardData = [
-    {
-      width: '306px',
-      height: '299px',
-      transform: 'translateY(48px)',
-      title: t('Join online communities'),
-      image: "/images/home-page/get-start-1.png",
-      boxShadow: "#C6D4FF",
-      desc: t('Find your cohort and participate with many other MAP Protocol enthusiasts.'),
-      src: '/article?id=online-communities'
-    },
-    {
-      width: '306px',
-      height: '299px',
-      transform: 'translateY(0px)',
-      image: "/images/community/community-1.png",
-      title: t('MAP Protocol events'),
-      boxShadow: "#DAD4FF",
-      desc: t('Find and participate in MAP Protocol conferences, hackathons, or meetups.'),
-      src: 'https://discord.com/invite/kt4beeTVnw'
-    },
+    // {
+    //   width: '306px',
+    //   height: '299px',
+    //   transform: 'translateY(48px)',
+    //   title: t('Join online communities'),
+    //   image: "/images/home-page/get-start-1.png",
+    //   boxShadow: "#C6D4FF",
+    //   desc: t('Find your cohort and participate with many other MAP Protocol enthusiasts.'),
+    //   src: '/article?id=online-communities'
+    // },
+    // {
+    //   width: '306px',
+    //   height: '299px',
+    //   transform: 'translateY(0px)',
+    //   image: "/images/community/community-1.png",
+    //   title: t('MAP Protocol events'),
+    //   boxShadow: "#DAD4FF",
+    //   desc: t('Find and participate in MAP Protocol conferences, hackathons, or meetups.'),
+    //   src: 'https://discord.com/invite/kt4beeTVnw'
+    // },
     {
       width: '306px',
       height: '299px',
@@ -108,7 +108,7 @@ export default function HomePageTop(
       boxShadow: "#D6F5FA",
       title: t('Stake MAPO'),
       desc: t('Get your MAPO and stake them to earn more rewards.'),
-      src: '/stake-mapo'
+      src: '/stake-raon'
 
     },
 
@@ -186,32 +186,32 @@ export default function HomePageTop(
 
       </div>
 
-      <div className={styles.contribute}>
-        <div className={styles.contributeLeft}>
-          <div className={styles.contributeTitle}>{t('Contribute to MAP Protocol')}</div>
-          <div className={styles.contributeDesc}>{t('Just as we root for openness and peer-to-peer decentralization, we aim to make knowledge freely accessible to all. All content on this website is open source. You can propose new edits, suggest sparkling new features, and help us improve.')}</div>
-          <div className={styles.button}>
-            <Button 
-              onClick={() => {
-                Router.push('/article?id=learn-about-MAPDAO')
-              }}
-              variant="contained">{t('Learn about MAPDAO')}</Button>
-        
-            <Button variant="outlined"
-              onClick={() => {
-                window.open('https://tally.so/r/wgdPal')
-              }}
-            >{t('Join MAPDAO')}</Button>
-          </div>
-        </div>
-        <div className={styles.contributeImage}>
-          <Image
-            fill
-            style={{ objectFit: "contain" }}
-            src="/images/run-a-node/run-a-node.png"
-            alt="run-a-node" />
-        </div>
-      </div>
+      {/*<div className={styles.contribute}>*/}
+      {/*  <div className={styles.contributeLeft}>*/}
+      {/*    <div className={styles.contributeTitle}>{t('Contribute to MAP Protocol')}</div>*/}
+      {/*    <div className={styles.contributeDesc}>{t('Just as we root for openness and peer-to-peer decentralization, we aim to make knowledge freely accessible to all. All content on this website is open source. You can propose new edits, suggest sparkling new features, and help us improve.')}</div>*/}
+      {/*    <div className={styles.button}>*/}
+      {/*      <Button */}
+      {/*        onClick={() => {*/}
+      {/*          Router.push('/article?id=learn-about-MAPDAO')*/}
+      {/*        }}*/}
+      {/*        variant="contained">{t('Learn about MAPDAO')}</Button>*/}
+      {/*  */}
+      {/*      <Button variant="outlined"*/}
+      {/*        onClick={() => {*/}
+      {/*          window.open('https://tally.so/r/wgdPal')*/}
+      {/*        }}*/}
+      {/*      >{t('Join MAPDAO')}</Button>*/}
+      {/*    </div>*/}
+      {/*  </div>*/}
+      {/*  <div className={styles.contributeImage}>*/}
+      {/*    <Image*/}
+      {/*      fill*/}
+      {/*      style={{ objectFit: "contain" }}*/}
+      {/*      src="/images/run-a-node/run-a-node.png"*/}
+      {/*      alt="run-a-node" />*/}
+      {/*  </div>*/}
+      {/*</div>*/}
 
       <CardList />
     </view>

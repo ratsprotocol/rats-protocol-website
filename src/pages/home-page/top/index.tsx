@@ -70,7 +70,7 @@ export default function HomePageTop(
 
     cardContent: <Trans ns="home-page" i18nKey=
       'Cross-chain should be made easy. We provide a full suite of development tools, tutorials, and SDKs for you to build your cross-chain dApps or expand your chain connectivity with as little effort as possible. Building things cross-chain is as easy as building on a single chain.' components={{
-        link1: <Link target="_blank" href={"https://mapo.gitbook.io/docs-en/"} ></Link>,
+        link1: <Link target="_blank" href={"/what-is-rats-protocol/"} ></Link>,
       }} />,
   },
   {
@@ -98,7 +98,7 @@ export default function HomePageTop(
       title: t('Get some MAPO'),
       boxShadow: "#DAD4FF",
       desc: t('MAPO is the currency of MAP Protocol — you can use it for various purposes.'),
-      link: '/get-map'
+      link: '/get-raon'
 
     },
     {
@@ -109,7 +109,7 @@ export default function HomePageTop(
       boxShadow: "#FFEDC8",
       title: t('Try decentralized exchanges (DEXs)'),
       desc: t('DEXs hold transformative significance for decentralized finance (DeFi). Grab your MAPO and familiarize yourself with the mechanics of trading on a DEX.'),
-      link: '/get-map#dexs'
+      link: '/get-raon#dexs'
 
     },
     {

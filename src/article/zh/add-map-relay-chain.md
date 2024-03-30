@@ -4,7 +4,7 @@ description:
 lang: zh
 ---
 
-一旦您在 Metamask、Token Pocket 和 Particle Wallet 中选择了一个钱包，您就可以开始添加 RATS Protocol 网络 和 RATS 到钱包中。要获取 RAON，请阅读 [获取 RAON](/get-map) 的地方。
+一旦您在 Metamask、Token Pocket 和 Particle Wallet 中选择了一个钱包，您就可以开始添加 RATS Protocol 网络 和 RATS 到钱包中。要获取 RAON，请阅读 [获取 RAON](/get-raon) 的地方。
 
 
 # **添加 RATS Protocol 网络**

@@ -4,7 +4,7 @@ description:
 lang: en
 ---
 
-Once you have chosen a wallet among Metamask, Token Pocket, and Particle Wallet, you can start adding RATS Protocol Network and RATS to the wallet. To get RAON, please read where to [get RAON](/get-map).
+Once you have chosen a wallet among Metamask, Token Pocket, and Particle Wallet, you can start adding RATS Protocol Network and RATS to the wallet. To get RAON, please read where to [get RAON](/get-raon).
 
 
 # **Add RATS Protocol**

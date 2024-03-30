@@ -41,7 +41,7 @@ Through the RATS Protocol, a peer-to-peer cross-chain interoperable network, BRC
 
 ## Further enhanced RATS Protocol network security powered by the Bitcoin network
 
-RATS Relay Chain is the hub for interoperability with all blockchain networks, and all cross-chain interoperability transaction requests will pass through RATS Relay Chain. The relay chain uses a classic PoS consensus mechanism, where consensus nodes need to [stake RAON](/stake-mapo) to process cross-chain transaction requests on the RATS Protocol network.
+RATS Relay Chain is the hub for interoperability with all blockchain networks, and all cross-chain interoperability transaction requests will pass through RATS Relay Chain. The relay chain uses a classic PoS consensus mechanism, where consensus nodes need to [stake RAON](/stake-raon) to process cross-chain transaction requests on the RATS Protocol network.
 
 Every epoch, RATS Reelay Chain’s PoS consensus, and other related information on the network will be written into the Bitcoin block as transactions. This will prevent [long-range attacks](/article?id=understanding-Long-Range-attacks) on the relay chain, and the security of the relay chain is thus ensured by the security of the Bitcoin network.
 

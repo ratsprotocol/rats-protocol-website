@@ -1,9 +1,10 @@
 module.exports = {
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'fr', 'de', 'kr', 'es',
-      'ja', 'zh', 'tr', 'vi', 'it',
-      'zh-TW','hi','ar','uk','ru'],
+    locales: ['en', 'zh',
+      // 'ja', 'zh', 'tr', 'vi', 'it',
+      // 'zh-TW','hi','ar','uk','ru'
+    ],
   },
   debug: false,
 

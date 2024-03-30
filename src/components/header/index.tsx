@@ -59,12 +59,12 @@ export const tabsArray: TabsArray = {
         },
         {
             name: 'Get MAPO',
-            path: '/get-map'
+            path: '/get-raon'
 
         },
         {
             name: 'Stake MAPO',
-            path: '/stake-mapo'
+            path: '/stake-raon'
 
         },
         {
@@ -105,11 +105,11 @@ export const tabsArray: TabsArray = {
     'Learn': [
         {
             name: 'What is MAP Protocol?',
-            path: '/what-is-map-protocol'
+            path: '/what-is-rats-protocol'
         },
         {
             name: 'What is MAPO?',
-            path: '/what-is-mapo'
+            path: '/what-is-raon'
         },
         {
             name: 'MAP Protocol WhitePaper',
@@ -282,7 +282,8 @@ const Header = (
 
     const jumpRouter = (item: TabItem) => {
         if (item.name == 'Documentation')
-            Router.push(router.locale == 'zh' ? 'https://mapo.gitbook.io/docs-zh/' : 'https://mapo.gitbook.io/docs-en/')
+            // Router.push(router.locale == 'zh' ? '' : 'https://mapo.gitbook.io/docs-en/')
+            Router.push('/what-is-rats-protocol')
         else
             item?.path && Router.push(item.path)
     }

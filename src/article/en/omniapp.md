@@ -5,7 +5,7 @@ lang: en
 ---
 
 
-Omnichain dApp refers to decentralized apps that do not rely on any trusted third parties, but use truly decentralized methods to achieve cross-chain capabilities. You can use [RATS Protocol](/what-is-map-protocol), the peer-to-peer omnichain network focused on cross-chain interoperability, to build your Omnichain dAPp.
+Omnichain dApp refers to decentralized apps that do not rely on any trusted third parties, but use truly decentralized methods to achieve cross-chain capabilities. You can use [RATS Protocol](/what-is-rats-protocol), the peer-to-peer omnichain network focused on cross-chain interoperability, to build your Omnichain dAPp.
 
 RATS Protocol decentralized cross-chain flow
 

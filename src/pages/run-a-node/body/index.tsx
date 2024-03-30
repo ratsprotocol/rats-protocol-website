@@ -52,8 +52,8 @@ export default function Body(
             marginBottom: '50px'
           }}> {<div>
             <Trans ns="run-a-node" i18nKey="You can find an overview of all current validators and their votes on MAPO Scan and the complete guides on how to become a new validator here." components={{
-              link1: <Link target="_blank" href={"https://mapscan.io/validators"} ></Link>,
-              link2: <Link target="_blank" href={router.locale == 'zh' ? 'https://mapo.gitbook.io/docs-zh/ji-chu-zhu-ti/architecture/shi-li/how-to-become-a-new-validator' : 'https://mapo.gitbook.io/docs-en/base/architecture_en/example/how-to-become-a-new-validator_en'}></Link>
+              link1: <Link target="_blank" href={"https://ratsscan.com/validators"} ></Link>,
+              link2: <Link target="_blank" href={router.locale == 'zh' ? 'https://ratschain.io/zh/what-is-rats-protocol' : 'https://ratschain.io/en/what-is-rats-protocol'}></Link>
             }} /></div>}</HandTip>
         </div>
 
@@ -144,7 +144,7 @@ export default function Body(
           maxWidth: '100%',
           alignSelf: 'center'
         }}> {<div><Trans ns="run-a-node" i18nKey="You can also browse our guides on How To Become A New Validator to get started." components={{
-          link1: <Link target="_blank" href={router.locale == 'zh' ? 'https://mapo.gitbook.io/docs-zh/ji-chu-zhu-ti/architecture/shi-li/how-to-become-a-new-validator' : "https://mapo.gitbook.io/docs-en/base/architecture_en/example/how-to-become-a-new-validator_en"} className={styles.linkText}></Link>,
+          link1: <Link target="_blank" href={router.locale == 'zh' ? 'https://ratschain.io/zh/what-is-rats-protocol' : "https://ratschain.io/en/what-is-rats-protocol"} className={styles.linkText}></Link>,
 
         }} /></div>}</HandTip>
         <div className={styles.stepTop}>
@@ -169,7 +169,7 @@ export default function Body(
               <div className={styles.stepDesc}>
                 <Trans ns="run-a-node" i18nKey="You need createAccount command to perform the above operations. For more details about createAccount command, please see this." components={{
                   text: <text className={styles.inlineText}></text>,
-                  link1: <Link target="_blank" href={"https://mapo.gitbook.io/docs-en/base/architecture_en/example/how-to-become-a-new-validator_en#create-an-account"} ></Link>,
+                  link1: <Link target="_blank" href={"https://ratschain.io/en/what-is-rats-protocol"} ></Link>,
 
                 }} />
               </div>
@@ -214,7 +214,7 @@ export default function Body(
           <div className={styles.stepDesc}>
             <Trans ns="run-a-node" i18nKey="You need lockedMAPO command to perform the above operations, more detail about lockedMAPO command please see this." components={{
               text: <text className={styles.inlineText}></text>,
-              link1: <Link target="_blank" href={"https://mapo.gitbook.io/docs-en/base/architecture_en/example/how-to-become-a-new-validator_en#locking-mapo"} ></Link>,
+              link1: <Link target="_blank" href={"https://ratschain.io/en/what-is-rats-protocol"} ></Link>,
             }} />
           </div>
         </div>
@@ -231,12 +231,12 @@ export default function Body(
           <div className={styles.stepDesc}>
             <Trans ns="run-a-node" i18nKey="This step is a key step for registering as a new validator. You need register command to perform the above operations. For more details about register command please see this." components={{
               text: <text className={styles.inlineText}></text>,
-              link1: <Link target="_blank" href={"https://mapo.gitbook.io/docs-en/base/architecture_en/example/how-to-become-a-new-validator_en#locking-mapo"} ></Link>,
+              link1: <Link target="_blank" href={"https://ratschain.io/en/what-is-rats-protocol"} ></Link>,
             }} />
           </div>
           <div className={styles.stepDesc}>
             <Trans ns="run-a-node" i18nKey="At this step, you will successfully register as a validator. Next, you can try to vote for yourself. For details on how to vote please see this." components={{
-              link1: <Link target="_blank" href={"https://mapo.gitbook.io/docs-en/base/architecture_en/example/how-to-become-a-new-validator_en#locking-mapo"} ></Link>,
+              link1: <Link target="_blank" href={"https://ratschain.io/en/what-is-rats-protocol"} ></Link>,
             }} />
           </div>
         </div>
@@ -256,7 +256,7 @@ export default function Body(
           <div className={styles.stepDesc}>
             <Trans ns="run-a-node" i18nKey="Since you’ve locked in 1,000,000 MAPO in Step 3, it's a great decision to vote for yourself now." components={{
               text: <text className={styles.inlineText}></text>,
-              link1: <Link target="_blank" href={"https://mapo.gitbook.io/docs-en/base/architecture_en/example/how-to-vote_en"} ></Link>,
+              link1: <Link target="_blank" href={"https://ratschain.io/en/what-is-rats-protocol"} ></Link>,
             }} />
           </div>
         </div>
@@ -275,7 +275,7 @@ export default function Body(
           <div className={styles.stakeDesc}>{t("If building your own node feels daunting or falls outside your technical expertise, you don't have to be sidelined. Just stake MAPO! You can still play a pivotal role in fortifying and sustaining our network.")}</div>
           <div className={styles.stakeButton}>
             <Button onClick={() => {
-              Router.push(`/stake-mapo`)
+              Router.push(`/stake-raon`)
             }} variant="contained">{t('Stake your MAPO')}</Button>
           </div>
         </div>

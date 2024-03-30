@@ -95,7 +95,7 @@ export const Footer = () => {
 
     const jumpRouter = (item: TabItem) => {
         if (item.name == 'Documentation')
-            Router.push(router.locale == 'zh' ? 'https://mapo.gitbook.io/docs-zh/' : 'https://mapo.gitbook.io/docs-en/')
+            Router.push('/what-is-rats-protocol')
         else
             item?.path && Router.push(item.path)
 
